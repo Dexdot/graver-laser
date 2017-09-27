@@ -156,7 +156,7 @@
 	}
 }
 
-@media all and (max-width: 991px) and (orientation: landscape) {
+@media (max-height: 480px) and (orientation: landscape) {
   .nav {
   	justify-content: flex-start;
   	line-height: 2.5;

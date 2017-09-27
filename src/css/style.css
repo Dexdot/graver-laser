@@ -602,7 +602,7 @@ Navigation
   .order {
     font-size: 1.4rem; } }
 
-@media all and (max-width: 991px) and (orientation: landscape) {
+@media (max-height: 480px) and (orientation: landscape) {
   .nav {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
