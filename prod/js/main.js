@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".hamburger, .nav__link").click(function(){$(".hamburger").toggleClass("is-active"),$(".nav").toggleClass("__active")})});
+$(document).ready(function(){$(".hamburger, .nav__link").click(function(){$(".hamburger").toggleClass("is-active"),$(".nav").toggleClass("__active")}),$(".pgtn__item").click(function(){$(".pgtn__line").css("background-color","#bdbdbd");var t=$(this).attr("data-target");$(this).children().css("background-color","#ff8000"),$(".hw__slide").hide(),$(".hw__slide").fadeOut(300),$("."+t).fadeIn(300)})});

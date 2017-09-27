@@ -139,7 +139,7 @@ Navigation
   min-height: 650px;
   height: 100vh;
   width: 100%;
-  background-image: url(../../src/img/main/bg.jpg);
+  background-image: url(../../prod/img/main/bg.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -357,7 +357,8 @@ Navigation
 #about {
   background: #fff;
   width: 100%;
-  padding-top: 6.875rem; }
+  padding-top: 6.875rem;
+  padding-bottom: 6.875rem; }
 
 .about__header {
   font-family: 'Roboto', sans-serif;
@@ -381,16 +382,35 @@ Navigation
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   max-width: 33rem;
-  margin-bottom: 5.625rem; }
+  margin-bottom: 5.625rem;
+  line-height: 23px; }
 
-.hardware__title {
+.hw__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative; }
+  .hw__slide.mercury {
+    display: none; }
+
+.hw__title {
   text-transform: uppercase;
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
   color: #292929;
   font-size: 1.125rem; }
 
-.hardware__name {
+.hw__name {
   font-family: 'Panton', sans-serif;
   font-weight: bold;
   font-style: normal;
@@ -398,13 +418,50 @@ Navigation
   color: #ff8000;
   margin-top: 0.3rem; }
 
-.hw-name-line {
-  width: 50px;
-  height: 1px;
-  background-color: #ff8000;
-  display: inline-block;
+.hw__info {
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  width: 25rem; }
+  .hw__info-text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 24px; }
+    .hw__info-text:first-child {
+      margin-bottom: 1rem; }
+    .hw__info-text span {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700; }
+
+.hw__mark {
+  width: 37.5rem;
   position: absolute;
-  right: 0; }
+  right: 0;
+  top: -75%; }
+
+.hw__mercury {
+  width: 37rem;
+  position: absolute;
+  right: 0;
+  top: -30%; }
+
+.pgtn__item {
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  line-height: 20px;
+  cursor: pointer; }
+  .pgtn__item:first-child {
+    margin-right: 17px; }
+    .pgtn__item:first-child span {
+      background-color: #ff8000; }
+
+.pgtn__line {
+  display: inline-block;
+  background-color: #bdbdbd;
+  width: 70px;
+  height: 3px;
+  vertical-align: middle; }
 
 /* Media */
 @font-face {
