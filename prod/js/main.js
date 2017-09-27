@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".hamburger, .nav__link").click(function(){$(".hamburger").toggleClass("is-active"),$(".nav").toggleClass("__active")})});

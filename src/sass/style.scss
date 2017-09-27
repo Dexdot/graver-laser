@@ -1,0 +1,218 @@
+@import "vars";
+@import "mixins";
+@import "hamburgers";
+html {
+	font-size: 16px;
+}
+
+/*
+Navigation
+	1. Main
+	2. About
+	3. Advantages
+	4. Services
+	5. Portfolio
+	6. Stages
+	7. Clients
+	8. Callback
+	9. Footer
+	10. Media
+*/
+
+
+
+/* Main */
+#main {
+	min-height: 650px;
+	height: 100vh;
+	width: 100%;
+	background-image: url(../../src/img/main/bg.JPG);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	overflow-x: hidden;
+	position: relative;
+}
+.header {
+	height: 6.25rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: relative;
+	&__logo {
+		width: 18.75rem;
+		img {
+			width: 16.875rem;
+		}
+	}
+	&__nav {
+		flex-grow: 1;
+	}
+	&__border {
+		display: inline-block;
+		width: 1000%;
+		background-color: #888888;
+		height: 1px;
+		position: absolute;
+		bottom: 0;
+		left: -50%;
+	}
+}
+.nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	&__link {
+		text-transform: uppercase;
+		font-size: 0.875rem;
+		@include rbt(lt);
+		color: $white;
+		transition: color 0.3s;
+		&:hover {
+			color: $accent;
+		}
+		&:hover, &:focus, &:visited, &:active {
+			text-decoration: none;
+		}
+		&:focus {
+			color: $white;
+		}
+	}
+	&__contacts {
+		width: 12.5rem;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		justify-content: flex-start;
+	}
+}
+.hamburger {
+	position: fixed;
+	top: 1.5rem;
+	right: 15px;
+	padding: 0;
+	z-index: 1;
+	outline: none;
+	background-color: #f8f9f9;
+	border-radius: 50%;
+	width: 35px;
+	height: 35px;
+	box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+	&-box {
+		transform: translateY(2px);
+	}
+}
+.phone {
+	text-align: right;
+	@include rbt(md);
+	color: $white;
+	font-size: 1.55rem;
+	transition: color 0.3s;
+	&:hover {
+		color: $accent;
+	}
+	&:focus {
+		color: $accent;
+	}
+	&:hover, &:focus, &:visited, &:active {
+		text-decoration: none;
+	}
+	&__code {
+		@include rbt(lt);
+	}
+}
+.order {
+	text-align: right;
+	@include rbt(lt);
+	color: $accent;
+	font-size: 1rem;
+	&:hover {
+		color: $accent;
+	}
+	&:focus {
+		color: $accent;
+	}
+}
+
+.main {
+	padding-top: 10%;
+	&__header {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.7rem;
+		@include ptn(bold);
+		color: $white;
+		line-height: 53px;
+	}
+	&__title {
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 2.5rem;
+		@include ptn(lt);
+		color: $white;
+		margin-bottom: 1rem;
+		line-height: 53px;
+	}
+	&__descr {
+		color: #e4e4e4;
+		@include rbt(reg);
+		font-size: 1.20rem;
+		text-align: center;
+	}
+}
+.btn-purchase {
+	width: 17rem;
+	height: 4.625rem;
+	display: block;
+	margin: 3rem auto 0 auto;
+	border-radius: 40px;
+	border: 1px solid $accent;
+	color: $white;
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: 1.1rem;
+	@include rbt(reg);
+	color: $white;
+	transition: color, background-color 0.3s;
+	&:hover {
+		background-color: $accent;
+		color: $white;
+	}
+	&:focus {
+		outline: none;
+		border: 1px solid $white;
+	}
+	&:active {
+		padding-top: 3px;
+	}
+}
+.arrow-down {
+	position: absolute;
+	bottom: 90px;
+	left: 50%;
+	margin: 0 0 0 -15px;
+	transform: rotate(270deg);
+	animation: down 2s ease-in-out infinite;
+}
+@keyframes down {
+	0% {transform: translate(0,-20px) rotate(270deg);opacity: 0;}
+	50% {opacity: 1;}
+	to {transform: translate(0,20px) rotate(270deg);opacity: 0;}
+}
+
+
+
+/* About */
+#about {
+	background: $white;
+	width: 100%;
+}
+
+
+
+
+
+
+
+/* Media */
+@import "media";

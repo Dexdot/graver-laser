@@ -1,0 +1,75 @@
+@font-face {
+	font-family: 'Panton';
+	src: url('../../prod/fonts/panton/Panton-Light.woff2') format('woff2'),
+		url('../../prod/fonts/panton/Panton-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Panton';
+	src: url('../../prod/fonts/panton/Panton-Bold.woff2') format('woff2'),
+		url('../../prod/fonts/panton/Panton-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Panton Black Caps';
+	src: url('../../prod/fonts/panton/Panton-BlackCaps.woff2') format('woff2'),
+		url('../../prod/fonts/panton/Panton-BlackCaps.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@mixin ptn($style) {
+	@if $style == lt {
+		font-family: 'Panton', sans-serif;
+		font-weight: 300;
+		font-style: normal;
+	}
+	@if $style == bold {
+		font-family: 'Panton', sans-serif;
+		font-weight: bold;
+		font-style: normal;
+	}
+	@if $style == black {
+		font-family: 'Panton Black Caps', sans-serif;
+		font-weight: 900;
+		font-style: normal;
+	}
+}
+
+@mixin rbt($style) {
+	@if $style == th {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 100;
+	}
+	@if $style == lt {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 300;
+	}
+	@if $style == reg {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 400;
+	}
+	@if $style == md {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 500;
+	}
+	@if $style == bold {
+		font-family: 'Roboto', sans-serif;
+		font-weight: 700;
+	}
+}
+
+@mixin section-header {
+	@include rbt(reg);
+	color: $accent;
+	font-size: 1.125rem;
+}
+@mixin section-descr {
+	@include ptn(bold);
+	color: $boldBlack;
+	font-size: 2.5rem;
+}

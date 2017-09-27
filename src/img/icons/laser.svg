@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="49px" height="48px" viewBox="0 0 49 48">
+<filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+<feFlood flood-color="rgb(41,41,41)" result="coFloodOut1"/>
+<feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+<feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+</filter>
+<image x="0" y="0" width="49" height="48" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAAwCAQAAAASyVoyAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAANCSURBVFjDtdZdiNRVGMfxz4zrrC+zKmnlmgiy1WIluagUoS2aF61diEFSLVJKLxJeGAkbddVFGylpWRdeFBRhG10ZRoQIhS9FIFZr6mJqyKL0Qij70ui6M6eL3eI/a/v//3d2/B0G5jznPOf7nOfMPOcQpw49iomtx6dxi9TEIup12ylJW9RXjsg64/1ERItb4xeJU0gIYUgThcoRVVESIqRaJVbxifhbs3My19nbfBbpFeMDjUcMKtl73U4yusv6N7tS+R43GtBk+og2pWxOo+CZyhFTnVcSRrRfylK3yyV1lSeq38de9aQLEdsk1yKpm2GD3XorR/CBl9yjP2I57tdI73F5uytP05A+EcqS9VpkLKvLvvECaBaskxtus0yNjK0UrExaIJM0QdZRGUeHU9rmj8jYPne4S2n8+3hacF6nTp0aIvYGwabxLw/TXdb+P/btesyoDoIdLps2wlbnkneqBeB2wXMjbBsFjdVD8KWTZcUu67j91QSwStAc6S8TPJzONflHO6QJfnKbM4r65E3Q4HcLDaZzTafgvCn65Kxw1m9O26Gruon6V42CBWNzGevdnR/+3EBEBaoc8awXbiyiVrsHbyxitVlpy0d6RK3aSG++w76vMLxRQ9lvOxYLlsjKmZzedXSt9I3Vw1dRyUmbTTeAXq0OVuOdyFKdutSaD2Yb0KZBsMgRh8AareOF1Jhnnj5fWIp39XvEFZsFa2VsFXSkrnKxetQPetwrb6dVBrR4HlsMejmNe8Zak2NPpKTfLdY64KKrGr3hFSfkLTPXR3IJhbSkkDGYotoWFeSQi1gGlMoePKP61mCLjoRIriiaa6ZzmnylxTEzFPypLvEknvAWResTI2myzUWHcZPX1WOPU7am2P96xaykd+1iJxzzlL3aZDV5zP340M/WmaTdJrNjvGuGsrohFrHAHmv+uyO2Cd4b/l5ros8Fb8d4bxg6i3idKvt7PYD7ZARcxRqL9MUvMLZKO8fdjrjTvIjtR2eqiVhimjdNtmQsTmNDPOSCA7qTH/zliIxC6tkrfKvgu7JHW7wKMjVKWuRTFLMgb6Fd+FqrF/Wm8lmulHHWHBNTxvSX5U5rdNDMlB7XXPwHRvbtra/bCeoAAAAldEVYdGRhdGU6Y3JlYXRlADIwMTctMDktMjZUMjA6MzI6MzgrMDA6MDCHVz5kAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDE3LTA5LTI2VDIwOjMyOjM4KzAwOjAw9gqG2AAAAABJRU5ErkJggg==" /></svg>
