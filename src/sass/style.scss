@@ -188,7 +188,7 @@ Navigation
 }
 .arrow-down {
 	position: absolute;
-	bottom: 90px;
+	bottom: 5%;
 	left: 50%;
 	margin: 0 0 0 -15px;
 	transform: rotate(270deg);
@@ -206,8 +206,37 @@ Navigation
 #about {
 	background: $white;
 	width: 100%;
+	padding-top: 6.875rem;
 }
+.about {
+	&__header {
+		@include section-header;
+	}
+	&__title {
+		@include section-descr;
+	}
+	&__info {
+		color: $ltBlack;
+		@include rbt(lt);
+		max-width: 33rem;
+		margin-bottom: 5.625rem;
+	}
+}
+.hardware {
+	&__name {
+		display: block;
+		position: relative;
+	}
+}
+.hw-name-line {
+	width: 50px;
+	height: 1px;
+	background-color: $accent;
+	display: inline-block;
+	position: absolute;
+	right: 0;
 
+}
 
 
 

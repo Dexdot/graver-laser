@@ -320,7 +320,7 @@ Navigation
 
 .arrow-down {
   position: absolute;
-  bottom: 90px;
+  bottom: 5%;
   left: 50%;
   margin: 0 0 0 -15px;
   -webkit-transform: rotate(270deg);
@@ -356,7 +356,44 @@ Navigation
 /* About */
 #about {
   background: #fff;
-  width: 100%; }
+  width: 100%;
+  padding-top: 6.875rem; }
+
+.about__header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ff8000;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  text-transform: uppercase; }
+
+.about__title {
+  font-family: 'Panton', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #292929;
+  font-size: 2.5rem;
+  margin-bottom: 4.375rem;
+  text-transform: uppercase; }
+
+.about__info {
+  color: #4e4e4e;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  max-width: 33rem;
+  margin-bottom: 5.625rem; }
+
+.hardware__name {
+  display: block;
+  position: relative; }
+
+.hw-name-line {
+  width: 50px;
+  height: 1px;
+  background-color: #ff8000;
+  display: inline-block;
+  position: absolute;
+  right: 0; }
 
 /* Media */
 @font-face {
