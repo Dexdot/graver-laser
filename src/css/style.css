@@ -400,7 +400,7 @@ Navigation
   -ms-flex-direction: row;
   flex-direction: row;
   position: relative; }
-  .hw__slide.mercury {
+  .hw__slide:last-child {
     display: none; }
 
 .hw__title {
@@ -443,7 +443,7 @@ Navigation
   width: 37rem;
   position: absolute;
   right: 0;
-  top: -30%; }
+  top: -20%; }
 
 .pgtn__item {
   display: inline-block;
@@ -496,7 +496,17 @@ Navigation
   .header__logo {
     width: 15rem; }
     .header__logo img {
-      width: 14.5rem; } }
+      width: 14.5rem; }
+  .hw__mark {
+    width: 27rem;
+    position: absolute;
+    right: 0;
+    top: -50%; }
+  .hw__mercury {
+    width: 25rem;
+    position: absolute;
+    right: 0;
+    top: -10%; } }
 
 @media (min-width: 991px) {
   .hamburger {
@@ -504,7 +514,17 @@ Navigation
 
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
-    font-size: 15px; } }
+    font-size: 15px; }
+  .hw__mark {
+    width: 35rem;
+    position: absolute;
+    right: 0;
+    top: -70%; }
+  .hw__mercury {
+    width: 32rem;
+    position: absolute;
+    right: 0;
+    top: -20%; } }
 
 @media (min-width: 1600px) {
   html {
@@ -516,7 +536,24 @@ Navigation
   .main__header {
     font-size: 2rem; }
   .main__title {
-    font-size: 1.8rem; } }
+    font-size: 1.8rem; }
+  .pgtn {
+    text-align: center;
+    margin-top: 3rem; } }
+
+@media (max-width: 767px) {
+  .hw__slide {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .hw__mark, .hw__mercury {
+    position: static;
+    display: block;
+    max-width: 30rem;
+    width: 100%;
+    margin: 0 auto;
+    height: auto; } }
 
 @media (max-width: 992px) {
   .nav {

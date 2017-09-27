@@ -13,6 +13,10 @@
 			font-size: 1.8rem;
 		}
 	}
+	.pgtn {
+		text-align: center;
+		margin-top: 3rem;
+	}
 }
 
 // sm
@@ -26,6 +30,72 @@
 		}
 		&__title {
 			font-size: 2.5rem;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	.hw {
+		&__slide {
+			flex-direction: column;
+		}
+		&__mark, &__mercury {
+			position: static;
+			display: block;
+			max-width: 30rem;
+			width: 100%;
+			margin: 0 auto;
+			height: auto;
+		}
+	}
+}
+
+// md
+@media (min-width: 768px) and (max-width: 991px) {
+	html {
+		font-size: 14px;
+	}
+	.header {
+		&__logo {
+			width: 15rem;
+			img {
+				width: 14.5rem;
+			}
+		}
+	}
+	.hw {
+		&__mark {
+			width: 27rem;
+			position: absolute;
+			right: 0;
+			top: -50%;
+		}
+		&__mercury {
+			width: 25rem;
+			position: absolute;
+			right: 0;
+			top: -10%;
+		}
+	}
+}
+
+// lg
+@media (min-width: 992px) and (max-width: 1199px) {
+	html {
+		font-size: 15px;
+	}
+	.hw {
+		&__mark {
+			width: 35rem;
+			position: absolute;
+			right: 0;
+			top: -70%;
+		}
+		&__mercury {
+			width: 32rem;
+			position: absolute;
+			right: 0;
+			top: -20%;
 		}
 	}
 }
@@ -74,29 +144,6 @@
 	.order {
 		font-size: 1.4rem;
 	}
-}
-
-// md
-@media (min-width: 768px) and (max-width: 991px) {
-	html {
-		font-size: 14px;
-	}
-	.header {
-		&__logo {
-			width: 15rem;
-			img {
-				width: 14.5rem;
-			}
-		}
-	}
-}
-
-// lg
-@media (min-width: 992px) and (max-width: 1199px) {
-	html {
-		font-size: 15px;
-	}
-
 }
 
 // xl

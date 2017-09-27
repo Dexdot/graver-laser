@@ -231,7 +231,7 @@ Navigation
 		justify-content: space-between;
 		flex-direction: row;
 		position: relative;
-		&.mercury{
+		&:last-child {
 			display: none;
 		}
 	}
@@ -273,7 +273,7 @@ Navigation
 		width: 37rem;
 		position: absolute;
 		right: 0;
-		top: -30%;
+		top: -20%;
 	}
 }
 .pgtn {
