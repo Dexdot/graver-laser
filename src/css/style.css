@@ -134,7 +134,7 @@ Navigation
 	9. Footer
 	10. Media
 */
-/* Main */
+/* 1. Main */
 #main {
   min-height: 650px;
   height: 100vh;
@@ -353,7 +353,7 @@ Navigation
     transform: translate(0, 20px) rotate(270deg);
     opacity: 0; } }
 
-/* About */
+/* 2. About */
 #about {
   background: #fff;
   width: 100%;
@@ -462,6 +462,85 @@ Navigation
   width: 70px;
   height: 3px;
   vertical-align: middle; }
+
+/* 3. Advantages */
+#advantages {
+  width: 100%;
+  background-color: #f9f9f9;
+  padding-top: 5.625rem;
+  padding-bottom: 5.625rem; }
+
+.advantages {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  .advantages__header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ff8000;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center; }
+  .advantages__title {
+    font-family: 'Panton', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #292929;
+    font-size: 2.5rem;
+    margin-bottom: 4.375rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1.375rem; }
+
+.advantage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  margin-top: 3rem; }
+  .advantage--hq {
+    margin-left: 1rem;
+    margin-right: 1rem; }
+  .advantage__name {
+    color: #292929;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 1.375rem;
+    text-align: center;
+    margin-top: 1.875rem;
+    margin-bottom: 1.25rem; }
+  .advantage__descr {
+    color: #4e4e4e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 1.125rem;
+    text-align: center;
+    line-height: 24px; }
 
 /* Media */
 @font-face {
