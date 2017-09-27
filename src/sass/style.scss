@@ -34,7 +34,7 @@ Navigation
 	position: relative;
 }
 .header {
-	height: 6.25rem;
+	min-height: 6.25rem;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
@@ -162,7 +162,7 @@ Navigation
 }
 .btn-purchase {
 	width: 17rem;
-	height: 4.625rem;
+	min-height: 4.625rem;
 	display: block;
 	margin: 3rem auto 0 auto;
 	border-radius: 40px;
@@ -280,7 +280,7 @@ Navigation
 	&__item {
 		display: inline-block;
 		width: 70px;
-		height: 20px;
+		min-height: 20px;
 		line-height: 20px;
 		cursor: pointer;
 		&:first-child {

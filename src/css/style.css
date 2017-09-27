@@ -147,7 +147,7 @@ Navigation
   position: relative; }
 
 .header {
-  height: 6.25rem;
+  min-height: 6.25rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -294,7 +294,7 @@ Navigation
 
 .btn-purchase {
   width: 17rem;
-  height: 4.625rem;
+  min-height: 4.625rem;
   display: block;
   margin: 3rem auto 0 auto;
   border-radius: 40px;
@@ -448,7 +448,7 @@ Navigation
 .pgtn__item {
   display: inline-block;
   width: 70px;
-  height: 20px;
+  min-height: 20px;
   line-height: 20px;
   cursor: pointer; }
   .pgtn__item:first-child {
@@ -601,3 +601,13 @@ Navigation
     font-size: 1.4rem; }
   .order {
     font-size: 1.4rem; } }
+
+@media all and (orientation: landscape) {
+  .nav {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    line-height: 2.5;
+    padding: 0; }
+    .nav__link {
+      font-size: 1rem; } }
