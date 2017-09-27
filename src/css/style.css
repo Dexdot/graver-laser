@@ -383,9 +383,20 @@ Navigation
   max-width: 33rem;
   margin-bottom: 5.625rem; }
 
+.hardware__title {
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: #292929;
+  font-size: 1.125rem; }
+
 .hardware__name {
-  display: block;
-  position: relative; }
+  font-family: 'Panton', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  font-size: 2rem;
+  color: #ff8000;
+  margin-top: 0.3rem; }
 
 .hw-name-line {
   width: 50px;

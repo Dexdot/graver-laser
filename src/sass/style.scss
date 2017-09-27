@@ -223,9 +223,25 @@ Navigation
 	}
 }
 .hardware {
+	&__title {
+		text-transform: uppercase;
+		@include rbt(lt);
+		color: $boldBlack;
+		font-size: 1.125rem;
+	}
 	&__name {
-		display: block;
-		position: relative;
+		@include ptn(bold);
+		font-size: 2rem;
+		color: $accent;
+		margin-top: 0.3rem;
+	}
+	&__info {
+		&-text {
+			@include rbt()
+			span {
+				@include rbt(bold);
+			}
+		}
 	}
 }
 .hw-name-line {
