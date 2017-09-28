@@ -641,8 +641,22 @@ Navigation
   text-align: center; }
 
 .service {
-  padding: 5.625rem 5.625rem 5.625rem 3.75rem;
-  width: 50%; }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative; }
+  .service__info {
+    padding: 5.625rem 5.625rem 5.625rem 3.75rem;
+    width: 50%;
+    -webkit-box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.13);
+    box-shadow: 0px 4px 29px 0px rgba(0, 0, 0, 0.13);
+    z-index: 2; }
   .service__name {
     color: #292929;
     font-family: 'Roboto', sans-serif;
@@ -681,6 +695,55 @@ Navigation
     .service__order:hover {
       cursor: pointer;
       background-color: #ff8000; }
+  .service__slider {
+    width: 50%;
+    z-index: 1; }
+  .service__slide.-kai {
+    width: 100%;
+    background: url(../../prod/img/services/lg/kai.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-beer {
+    width: 100%;
+    background: url(../../prod/img/services/lg/beer.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-ring {
+    width: 100%;
+    background: url(../../prod/img/services/lg/ring.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-popov {
+    width: 100%;
+    background: url(../../prod/img/services/lg/popov.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-spoon {
+    width: 100%;
+    background: url(../../prod/img/services/lg/spoon.jpg) no-repeat center center;
+    background-size: cover; }
+
+.siema__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: 40px;
+  right: 25%;
+  -webkit-transform: translateX(52%);
+  -ms-transform: translateX(52%);
+  transform: translateX(52%);
+  z-index: 3; }
+  .siema__btns li:first-child .pgtn__line {
+    background: #ff8000; }
+
+.siema__btn {
+  background: transparent;
+  margin-right: 10px;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 21px;
+  outline: none; }
+  .siema__btn .pgtn__line {
+    background: #fff;
+    width: 50px; }
 
 /* Media */
 @font-face {
