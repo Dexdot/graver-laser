@@ -15,16 +15,16 @@ $(document).ready(function() {
         1000)
     });
 
-// Tabs
-    var tab = $('.pgtn__item');
-      tab.click(function() {
-        $('.pgtn__line').css('background-color', '#bdbdbd');
-        var target = $(this).attr('data-target');
-        $(this).children().css('background-color', '#ff8000');
-        $('.hw__slide').hide();
-        $('.hw__slide').fadeOut(600);
-        $('.' + target).fadeIn(600);
-      });
+// Slick slider
+    $('.hw').slick({
+      speed: 1400,
+      draggable: false,
+      autoplay: true,
+      autoplaySpeed: 8000,
+      arrows: true,
+      prevArrow: '<span class="pgtn__wrap pgtn__wrap--left" data-target="mark"><span class="pgtn__line"></span></span>',
+      nextArrow: '<span class="pgtn__wrap pgtn__wrap--right" data-target="mercury"><span class="pgtn__line"></span></span>'
+    });
 
 
 });

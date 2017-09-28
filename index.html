@@ -9,7 +9,7 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;subset=cyrillic" rel="stylesheet">
-
+    <link rel="stylesheet" href="src/vendor/slick.css">
     <link rel="stylesheet" href="src/vendor/bootstrap.css">
     <link rel="stylesheet" href="prod/css/style.min.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -71,46 +71,44 @@
 
     <section id="about">
       <div class="container">
-        <div class="about__head">
-          <h2 class="about__header">Гравер-Лазер</h2>
-          <h3 class="about__title">О компании</h3>
-        </div>
-        <p class="about__info">
-          Компания «Гравер Лазер» предоставляет широкий спектр услуг в области лазерной гравировки и резки таких материалов, как металл, неметалл, пластик, резина, пленка, кожа и пр., а так же маркировка инструментов, ключей, ножей, изготовление сувенирной продукции, жетонов для животных, брелоков, гардеробных номерков, дверных табличек, шильдов и т.д. Мы принимаем заказы как от розничных, так и оптовых клиентов. Для выполнения заказа используется только современное высокоточное оборудование. Мы предлагаем Вам привлекательные цены и минимальные сроки выполнения заказов.
-        </p>
-        <div class="hw">
-
-            <div class="hw__slide mark">
-              <div>
-                <span class="hw__title">Волоконный лазерный гравер</span>
-                <h3 class="hw__name">SharpMark Fiber Pro <span class="hw__name-line"></span></h3>
-                <div class="hw__info">
-                  <p class="hw__info-text">
-                    <span>Обрабатываемые материалы:</span> камень, керамика и стекло, металлы и их сплавы, окрашенные поверхности, пластики и полимеры, резина.</p>
-                  <p class="hw__info-text"><span>Сферы применения:</span> медицина, ювелирная промышленность, электроника, военная и аэрокосмическая отрасль, бытовая электроника, рекламно-сувенирная отрасль, промышленность, штрих-коды, серийные номера.</p>
-                </div>
-              </div>
-              <img class="hw__mark" src="prod/img/about/mark.png" alt="SharpMark Fiber Pro">
+        <div class="about__wrap">
+          <div class="about">
+            <div class="about__head">
+              <h2 class="about__header">Гравер-Лазер</h2>
+              <h3 class="about__title">О компании</h3>
             </div>
-
-            <div class="hw__slide mercury">
-              <div>
-                <span class="hw__title">Лазерная гравировальная машина</span>
-                <h3 class="hw__name">GCC LaserPro Mercury III<span class="hw__name-line"></span></h3>
-                <div class="hw__info">
-                  <p class="hw__info-text">
-                    <span>Обрабатываемые материалы:</span> дерево, акриловое стекло, камень, однослойные и многослойные пластики, резина, картон, бумага, кожа, стекло, керамика, виниловая пленка, металлы с покрытием.</p>
-                  <p class="hw__info-text"><span>Сферы применения:</span> полиграфические, рекламные, сувенирные фирмы для изготовления печатей и штампов, гравировки различной сувенирной продукции, фигурной резки и гравировки бумаги (эксклюзивных открыток и визиток), изготовления номерков, табличек.</p>
+            <p class="about__info">
+              Компания «Гравер Лазер» предоставляет широкий спектр услуг в области лазерной гравировки и резки таких материалов, как металл, неметалл, пластик, резина, пленка, кожа и пр., а так же маркировка инструментов, ключей, ножей, изготовление сувенирной продукции, жетонов для животных, брелоков, гардеробных номерков, дверных табличек, шильдов и т.д. Мы принимаем заказы как от розничных, так и оптовых клиентов. Для выполнения заказа используется только современное высокоточное оборудование. Мы предлагаем Вам привлекательные цены и минимальные сроки выполнения заказов.
+            </p>
+          </div>
+          <div class="hw">
+              <div class="hw__slide mark">
+                <div class="hw__left">
+                  <span class="hw__title">Волоконный лазерный гравер</span>
+                  <h3 class="hw__name">SharpMark Fiber Pro <span class="hw__name-line"></span></h3>
+                  <div class="hw__info">
+                    <p class="hw__info-text">
+                      <span>Обрабатываемые материалы:</span> камень, керамика и стекло, металлы и их сплавы, окрашенные поверхности, пластики и полимеры, резина.</p>
+                    <p class="hw__info-text"><span>Сферы применения:</span> медицина, ювелирная промышленность, электроника, военная и аэрокосмическая отрасль, бытовая электроника, рекламно-сувенирная отрасль, промышленность, штрих-коды, серийные номера.</p>
+                  </div>
                 </div>
+                <img class="hw__mark" src="prod/img/about/mark.png" alt="SharpMark Fiber Pro">
               </div>
-              <img class="hw__mercury" src="prod/img/about/mercury.png" alt="SharpMark Fiber Pro">
-            </div>
-
+          
+              <div class="hw__slide mercury">
+                <div>
+                  <span class="hw__title">Лазерная гравировальная машина</span>
+                  <h3 class="hw__name">GCC LaserPro Mercury III<span class="hw__name-line"></span></h3>
+                  <div class="hw__info">
+                    <p class="hw__info-text">
+                      <span>Обрабатываемые материалы:</span> дерево, акриловое стекло, камень, однослойные и многослойные пластики, резина, картон, бумага, кожа, стекло, керамика, виниловая пленка, металлы с покрытием.</p>
+                    <p class="hw__info-text"><span>Сферы применения:</span> полиграфические, рекламные, сувенирные фирмы для изготовления печатей и штампов, гравировки различной сувенирной продукции, фигурной резки и гравировки бумаги (эксклюзивных открыток и визиток), изготовления номерков, табличек.</p>
+                  </div>
+                </div>
+                <img class="hw__mercury" src="prod/img/about/mercury.png" alt="SharpMark Fiber Pro">
+              </div>
+          </div>
         </div>
-        <ul class="pgtn">
-          <li class="pgtn__item" data-target="mark"><span class="pgtn__line"></span></li>
-          <li class="pgtn__item" data-target="mercury"><span class="pgtn__line"></span></li>
-        </ul>
         
       </div>
     </section>
@@ -174,7 +172,7 @@
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Main scripts -->
-    
+    <script src="src/vendor/slick.min.js"></script>
     <script src="prod/js/main.js"></script>
   </body>
-</html>
+</html> 

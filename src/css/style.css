@@ -357,51 +357,51 @@ Navigation
 #about {
   background: #fff;
   width: 100%;
-  padding-top: 6.875rem;
   padding-bottom: 6.875rem; }
 
-.about__header {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 400;
-  color: #ff8000;
-  font-size: 1.125rem;
-  margin-bottom: 15px;
-  text-transform: uppercase; }
-
-.about__title {
-  font-family: 'Panton', sans-serif;
-  font-weight: bold;
-  font-style: normal;
-  color: #292929;
-  font-size: 2.5rem;
-  margin-bottom: 4.375rem;
-  text-transform: uppercase; }
-
-.about__info {
-  color: #4e4e4e;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  max-width: 33rem;
-  margin-bottom: 5.625rem;
-  line-height: 23px; }
+.about {
+  -webkit-transform: translateY(18rem);
+  -ms-transform: translateY(18rem);
+  transform: translateY(18rem); }
+  .about__wrap {
+    margin-top: -15%; }
+  .about__header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ff8000;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    text-transform: uppercase; }
+  .about__title {
+    font-family: 'Panton', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #292929;
+    font-size: 2.5rem;
+    margin-bottom: 4.375rem;
+    text-transform: uppercase; }
+  .about__info {
+    color: #4e4e4e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    max-width: 33rem;
+    margin-bottom: 5.625rem;
+    line-height: 23px; }
 
 .hw__slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
-  flex-direction: row;
-  position: relative; }
-  .hw__slide:last-child {
-    display: none; }
+  flex-direction: row; }
 
 .hw__title {
   text-transform: uppercase;
@@ -410,6 +410,11 @@ Navigation
   color: #292929;
   font-size: 1.125rem; }
 
+.hw__left {
+  max-width: 33rem;
+  height: 410px;
+  width: 100%; }
+
 .hw__name {
   font-family: 'Panton', sans-serif;
   font-weight: bold;
@@ -417,11 +422,17 @@ Navigation
   font-size: 2rem;
   color: #ff8000;
   margin-top: 0.3rem; }
+  .hw__name-line {
+    background: #ff8000;
+    display: inline-block;
+    width: 100px;
+    height: 1px;
+    margin-left: 20px; }
 
 .hw__info {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
-  width: 25rem; }
+  max-width: 25rem; }
   .hw__info-text {
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
@@ -435,33 +446,36 @@ Navigation
 
 .hw__mark {
   width: 37.5rem;
-  position: absolute;
-  right: 0;
-  top: -75%; }
+  margin-bottom: 10rem; }
 
 .hw__mercury {
-  width: 37rem;
-  position: absolute;
-  right: 0;
-  top: -20%; }
+  width: 37.5rem;
+  margin-bottom: 8rem; }
 
-.pgtn__item {
-  display: inline-block;
+.pgtn__wrap {
   width: 70px;
-  min-height: 20px;
-  line-height: 20px;
+  height: 21px;
+  background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
   cursor: pointer; }
-  .pgtn__item:first-child {
-    margin-right: 17px; }
-    .pgtn__item:first-child span {
-      background-color: #ff8000; }
+  .pgtn__wrap--left {
+    z-index: 1; }
+  .pgtn__wrap--right {
+    left: 90px; }
+  .pgtn__wrap:hover .pgtn__line {
+    background-color: #ff8000; }
 
 .pgtn__line {
   display: inline-block;
+  vertical-align: middle;
   background-color: #bdbdbd;
   width: 70px;
   height: 3px;
-  vertical-align: middle; }
+  -webkit-transition: background-color 0.3s;
+  -o-transition: background-color 0.3s;
+  transition: background-color 0.3s; }
 
 /* 3. Advantages */
 #advantages {
@@ -578,7 +592,7 @@ Navigation
   .advantage__descr {
     color: #4e4e4e;
     font-family: 'Roboto', sans-serif;
-    font-weight: 100;
+    font-weight: 300;
     font-size: 1.125rem;
     text-align: center;
     line-height: 24px; }
@@ -616,17 +630,7 @@ Navigation
   .header__logo {
     width: 15rem; }
     .header__logo img {
-      width: 14.5rem; }
-  .hw__mark {
-    width: 27rem;
-    position: absolute;
-    right: 0;
-    top: -50%; }
-  .hw__mercury {
-    width: 25rem;
-    position: absolute;
-    right: 0;
-    top: -10%; } }
+      width: 14.5rem; } }
 
 @media (min-width: 991px) {
   .hamburger {
@@ -634,17 +638,7 @@ Navigation
 
 @media (min-width: 992px) and (max-width: 1199px) {
   html {
-    font-size: 15px; }
-  .hw__mark {
-    width: 35rem;
-    position: absolute;
-    right: 0;
-    top: -70%; }
-  .hw__mercury {
-    width: 32rem;
-    position: absolute;
-    right: 0;
-    top: -20%; } }
+    font-size: 15px; } }
 
 @media (min-width: 1600px) {
   html {
@@ -656,24 +650,7 @@ Navigation
   .main__header {
     font-size: 2rem; }
   .main__title {
-    font-size: 1.8rem; }
-  .pgtn {
-    text-align: center;
-    margin-top: 3rem; } }
-
-@media (max-width: 767px) {
-  .hw__slide {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .hw__mark, .hw__mercury {
-    position: static;
-    display: block;
-    max-width: 30rem;
-    width: 100%;
-    margin: 0 auto;
-    height: auto; } }
+    font-size: 1.8rem; } }
 
 @media (max-width: 992px) {
   .nav {
