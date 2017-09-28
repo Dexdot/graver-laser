@@ -18,13 +18,13 @@ $(document).ready(function() {
 // Slick slider
     $('.hw').slick({
       speed: 1400,
+      infinite: true,
       draggable: false,
-      autoplay: true,
-      autoplaySpeed: 8000,
-      arrows: true,
-      prevArrow: '<span class="pgtn__wrap pgtn__wrap--left" data-target="mark"><span class="pgtn__line"></span></span>',
-      nextArrow: '<span class="pgtn__wrap pgtn__wrap--right" data-target="mercury"><span class="pgtn__line"></span></span>'
+      // autoplay: true,
+      // autoplaySpeed: 8000,
+      dots: true,
+      arrows: false,
     });
-
+    $('.slick-dots li button').html('<span class="pgtn__line"></span>');
 
 });

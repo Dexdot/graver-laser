@@ -10,7 +10,16 @@
 			font-size: 2rem;
 		}
 		&__title {
-			font-size: 1.8rem;
+			font-size: 1.7rem;
+		}
+	}
+	.hw {
+		&__name {
+			width: auto;
+			font-size: 1.9rem;
+			&-line {
+				display: none;
+			}
 		}
 	}
 }
@@ -31,12 +40,40 @@
 }
 
 @media (max-width: 767px) {
+	#about {
+		padding-top: 30%;
+	}
+	.hw {
+		&__left {
+			height: auto;
+		}
+		&__slide {
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		&__mark, &__mercury {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.about {
+		transform: translateY(0);
+	}
+	.slick-dots {
+		justify-content: center;
+	}
 }
 
 // md
 @media (min-width: 768px) and (max-width: 991px) {
 	html {
 		font-size: 14px;
+	}
+	#about {
+		padding-top: 20%;
 	}
 	.header {
 		&__logo {
@@ -46,12 +83,41 @@
 			}
 		}
 	}
+	.about {
+		transform: translateY(2rem);
+	}
+	.hw {
+		&__mark {
+			width: 25rem;
+			transform: translateX(-25%);
+		}
+		&__mercury {
+			width: 27rem;
+			transform: translateX(-25%) translateY(25%);
+		}
+	}
 }
 
 // lg
 @media (min-width: 992px) and (max-width: 1199px) {
 	html {
 		font-size: 15px;
+	}
+	#about {
+		padding-top: 2rem;
+	}
+	.about {
+		transform: translateY(14rem);
+	}
+	.hw {
+		&__mark {
+			width: 30rem;
+			margin-bottom: 23%;
+		}
+		&__mercury {
+			width: 32rem;
+			margin-bottom: 17%;
+		}
 	}
 }
 
@@ -96,7 +162,7 @@
 		color: $boldBlack;
 		font-size: 1.4rem;
 	}
-	.order {
+	.order-call {
 		font-size: 1.4rem;
 	}
 }
@@ -115,7 +181,7 @@
   .nav {
   	justify-content: flex-start;
   	line-height: 2.5;
-  	padding: 0;
+  	padding-top: 5%;
   	&__link {
   		font-size: 1rem;
   	}

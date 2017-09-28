@@ -121,7 +121,7 @@ Navigation
 		@include rbt(lt);
 	}
 }
-.order {
+.order-call {
 	text-align: right;
 	@include rbt(lt);
 	color: $accent;
@@ -250,12 +250,16 @@ Navigation
 		font-size: 2rem;
 		color: $accent;
 		margin-top: 0.3rem;
+		display: flex;
+		align-items: center;
+		width: 33rem;
 		&-line {
 			background: $accent;
 			display: inline-block;
 			width: 100px;
 			height: 1px;
-			margin-left: 20px;
+			margin-left: 15px;
+			flex-grow: 1;
 		}
 	}
 	&__info {
@@ -284,36 +288,34 @@ Navigation
 	}
 }
 .pgtn {
-	&__wrap {
-		width: 70px;
-		height: 21px;
-		background: transparent;
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		cursor: pointer;
-		&--left {
-			z-index: 1;
-		}
-		&--right {
-			left: 90px;
-		}
-		&:hover {
-			.pgtn__line {
-				background-color: $accent;
-			}
-		}
-	}
 	&__line {
 		display: inline-block;
 		vertical-align: middle;
-		background-color: $pgtn-line;
+		background: $pgtn-line;
 		width: 70px;
 		height: 3px;
-		transition: background-color 0.3s;
+		transition: background 0.3s;
 	}
 }
-
+.slick-dots {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	button {
+		&:first-child {
+			margin-right: 17px;
+		}
+	 	background: transparent;
+	 	border: none;
+	 	padding: 0;
+	 	width: 70px;
+	 	height: 21px;
+	 	outline: none;
+	 }
+	 & li.slick-active .pgtn__line {
+	 	background: $accent;
+	 }
+} 
 
 /* 3. Advantages */
 #advantages {
@@ -411,6 +413,68 @@ Navigation
 		font-size: 1.125rem;
 		text-align: center;
 		line-height: 24px;
+	}
+}
+
+
+
+/* Services */
+#services {
+	background: $white;
+	width: 100%;
+	padding-top: 5.625rem;
+	padding-bottom: 5.625rem;
+}
+.services {
+	&__header {
+		@include section-header;
+		text-align: center;
+	}
+	&__title {
+		@include section-title;
+		text-align: center;
+	}
+}
+.service {
+	padding: 5.625rem 5.625rem 5.625rem 3.75rem;
+	width: 50%;
+	&__name {
+		color: $boldBlack;
+		@include rbt(reg);
+		font-size: 1.125rem;
+		text-align: left;
+		margin-bottom: 1.875rem;
+	}
+	&__line {
+		display: inline-block;
+		width: 70px;
+		height: 1px;
+		background-color: $accent;
+	}
+	&__descr {
+		margin-top: 1.875rem;
+		margin-bottom: 1.875rem;
+		color: $ltBlack;
+		@include rbt(lt);
+		font-size: 1rem;
+		text-align: left;
+	}
+	&__order {
+		width: 10.625rem;
+		height: 3.125rem;
+		border-radius: 50px;
+		border: 1px solid $accent;
+		text-transform: uppercase;
+		background-color: $white;
+		color: $boldBlack;
+		@include rbt(lt);
+		font-size: 0.875rem;
+		text-align: center;
+		transition: background-color 0.3s;
+		&:hover {
+			cursor: pointer;
+			background-color: $accent;
+		}
 	}
 }
 
