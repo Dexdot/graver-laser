@@ -908,7 +908,9 @@ Navigation
     color: #292929;
     font-size: 1.4rem; }
   .order-call {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .service__info {
+    padding: 3rem 3rem 3rem 2.3rem; } }
 
 @media (max-height: 480px) and (orientation: landscape) {
   .nav {

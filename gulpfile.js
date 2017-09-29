@@ -16,7 +16,7 @@ gulp.task('default', function() {
   bs.init({
     // host: "172.20.10.3",
     // host: "192.168.1.103",
-    host: "192.168.1.108",
+    // host: "192.168.1.108",
     server: {
       baseDir: "./",
       //proxy: "homework.sl"

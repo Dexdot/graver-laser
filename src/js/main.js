@@ -38,10 +38,19 @@ $(document).ready(function() {
 });
 
 // Siema
+function printSlideIndex() {
+  // console.log(this.currentSlide);
+  $('.siema__btn .pgtn__line').css('background', '#fff');
+  var sBtn = '.siema__btn-'+this.currentSlide;
+  console.log(sBtn);
+  $(sBtn).children().css('background', '#ff8000');
+}
     var mySiema = new Siema({
       selector: '.service__slider',
       duration: 800,
-      easing: 'ease-out'
+      easing: 'ease-out',
+      onInit: printSlideIndex,
+      onChange: printSlideIndex
     });
     var siemaBtn0 = document.querySelector('.siema__btn-0');
     var siemaBtn1 = document.querySelector('.siema__btn-1');
