@@ -221,7 +221,7 @@ Navigation
   top: 1.5rem;
   right: 15px;
   padding: 0;
-  z-index: 1;
+  z-index: 10;
   outline: none;
   background-color: #f8f9f9;
   border-radius: 50%;
@@ -650,6 +650,10 @@ Navigation
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   position: relative; }
   .service__info {
     padding: 5.625rem 5.625rem 5.625rem 3.75rem;
@@ -687,7 +691,7 @@ Navigation
     color: #292929;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
     text-align: center;
     -webkit-transition: background-color 0.3s;
     -o-transition: background-color 0.3s;
@@ -794,7 +798,9 @@ Navigation
     width: 27rem;
     -webkit-transform: translateX(-25%) translateY(25%);
     -ms-transform: translateX(-25%) translateY(25%);
-    transform: translateX(-25%) translateY(25%); } }
+    transform: translateX(-25%) translateY(25%); }
+  .service__info {
+    padding: 3rem 3rem 3rem 2.3rem; } }
 
 @media (min-width: 991px) {
   .hamburger {
@@ -831,7 +837,15 @@ Navigation
     width: auto;
     font-size: 1.9rem; }
     .hw__name-line {
-      display: none; } }
+      display: none; }
+  .service__slide.-spoon {
+    background-position: left center; }
+  .service__slide.-kai {
+    background-size: 200%; }
+  .siema__btn {
+    width: 40px; }
+    .siema__btn .pgtn__line {
+      width: 40px; } }
 
 @media (max-width: 767px) {
   #about {
@@ -861,7 +875,20 @@ Navigation
   .slick-dots {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; }
+  .service {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .service__info {
+      width: 95%; }
+      .service__info br {
+        display: none; }
+    .service__slider {
+      width: 95%; }
+  .siema__btns {
+    right: 50%; } }
 
 @media (max-width: 992px) {
   .nav {
@@ -886,7 +913,7 @@ Navigation
     -webkit-transition: all 0.8s;
     -o-transition: all 0.8s;
     transition: all 0.8s;
-    z-index: 1; }
+    z-index: 10; }
     .nav.__active {
       -webkit-transform: translateX(0);
       -ms-transform: translateX(0);
@@ -908,9 +935,7 @@ Navigation
     color: #292929;
     font-size: 1.4rem; }
   .order-call {
-    font-size: 1.4rem; }
-  .service__info {
-    padding: 3rem 3rem 3rem 2.3rem; } }
+    font-size: 1.4rem; } }
 
 @media (max-height: 480px) and (orientation: landscape) {
   .nav {
@@ -921,3 +946,7 @@ Navigation
     padding-top: 5%; }
     .nav__link {
       font-size: 1rem; } }
+
+@media (max-width: 325px) {
+  .siema__btns {
+    bottom: 75px; } }

@@ -22,6 +22,25 @@
 			}
 		}
 	}
+	.service {
+		&__slide {
+			&.-spoon {
+				background-position: left center;
+			}
+			&.-kai {
+				background-size: 200%;
+			}
+		}
+	}
+	.siema {
+		&__btn {
+			width: 40px;
+			.pgtn__line {
+				width: 40px;
+			}
+		}
+	}
+
 }
 
 // sm
@@ -65,6 +84,23 @@
 	.slick-dots {
 		justify-content: center;
 	}
+	.service {
+		flex-direction: column;
+		&__info {
+			width: 95%;
+			br {
+				display: none;
+			}
+		}
+		&__slider {
+			width: 95%;
+		}
+	}
+	.siema {
+		&__btns {
+			right: 50%;
+		}
+	}
 }
 
 // md
@@ -94,6 +130,11 @@
 		&__mercury {
 			width: 27rem;
 			transform: translateX(-25%) translateY(25%);
+		}
+	}
+	.service {
+		&__info {
+			padding: 3rem 3rem 3rem 2.3rem;
 		}
 	}
 }
@@ -141,7 +182,7 @@
 		background-color: #f4f4f4;
 		transform: translateX(100%);
 		transition: all 0.8s;
-		z-index: 1;
+		z-index: 10;
 		&.__active {
 			transform: translateX(0);
 		}
@@ -165,11 +206,6 @@
 	.order-call {
 		font-size: 1.4rem;
 	}
-	.service {
-		&__info {
-			padding: 3rem 3rem 3rem 2.3rem;
-		}
-	}
 }
 
 // xl
@@ -191,4 +227,10 @@
   		font-size: 1rem;
   	}
   }
+}
+
+@media (max-width: 325px) {
+	.siema__btns {
+		bottom: 75px;
+	}
 }

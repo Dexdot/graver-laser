@@ -28,23 +28,21 @@ $(document).ready(function() {
     $('.slick-dots li button').html('<span class="pgtn__line"></span>');
 
 // Service slide height
+  var siemaSlideHeight = +$('.service__info').outerHeight();
+  $('.service__slide').height(siemaSlideHeight);
+  window.addEventListener('resize', function () {
     var siemaSlideHeight = +$('.service__info').outerHeight();
     $('.service__slide').height(siemaSlideHeight);
-    window.addEventListener('resize', function () {
-      var siemaSlideHeight = +$('.service__info').outerHeight();
-      $('.service__slide').height(siemaSlideHeight);
-    });
+  });
 
 });
 
 // Siema
-function printSlideIndex() {
-  // console.log(this.currentSlide);
-  $('.siema__btn .pgtn__line').css('background', '#fff');
-  var sBtn = '.siema__btn-'+this.currentSlide;
-  console.log(sBtn);
-  $(sBtn).children().css('background', '#ff8000');
-}
+    function printSlideIndex() {
+      $('.siema__btn .pgtn__line').css('background', '#fff');
+      var sBtn = '.siema__btn-'+this.currentSlide;
+      $(sBtn).children().css('background', '#ff8000');
+    }
     var mySiema = new Siema({
       selector: '.service__slider',
       duration: 800,
