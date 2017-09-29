@@ -77,27 +77,27 @@ $(document).ready(function() {
       var siemaBtn4 = document.querySelector('.siema__btn-4');
 
       siemaBtn0.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lg .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lgSiema.goTo(0);
       });
       siemaBtn1.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lg .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lgSiema.goTo(1);
       });
       siemaBtn2.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lg .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lgSiema.goTo(2);
       });
       siemaBtn3.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lg .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lgSiema.goTo(3);
       });
       siemaBtn4.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lg .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lgSiema.goTo(4);
       });
@@ -124,27 +124,27 @@ $(document).ready(function() {
       var siemaBtn9 = document.querySelector('.siema__btns.-lr .siema__btn-4');
 
       siemaBtn5.addEventListener('click', function () {
-          $('.siema__btn .pgtn__line').css('background', '#fff');
+          $('.siema__btn.-lr .pgtn__line').css('background', '#fff');
           $(this).children().css('background', '#ff8000');
           return lrSiema.goTo(0);
         });
       siemaBtn6.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lr .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lrSiema.goTo(1);
       });
       siemaBtn7.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lr .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lrSiema.goTo(2);
       });
       siemaBtn8.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lr .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lrSiema.goTo(3);
       });
       siemaBtn9.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btn.-lr .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
         return lrSiema.goTo(4);
       });
@@ -171,27 +171,29 @@ $(document).ready(function() {
       var siemaBtn9 = document.querySelector('.siema__btns.-bx .siema__btn-4');
 
       siemaBtn5.addEventListener('click', function () {
-          $('.siema__btn .pgtn__line').css('background', '#fff');
+          $('.siema__btns.-bx .pgtn__line').css('background', '#fff');
           $(this).children().css('background', '#ff8000');
-          return lrSiema.goTo(0);
+          var tmp = $(this);
+          console.log(tmp);
+          return bxSiema.goTo(0);
         });
       siemaBtn6.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btns.-bx .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
-        return lrSiema.goTo(1);
+        return bxSiema.goTo(1);
       });
       siemaBtn7.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btns.-bx .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
-        return lrSiema.goTo(2);
+        return bxSiema.goTo(2);
       });
       siemaBtn8.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btns.-bx .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
-        return lrSiema.goTo(3);
+        return bxSiema.goTo(3);
       });
       siemaBtn9.addEventListener('click', function () {
-        $('.siema__btn .pgtn__line').css('background', '#fff');
+        $('.siema__btns.-bx .pgtn__line').css('background', '#fff');
         $(this).children().css('background', '#ff8000');
-        return lrSiema.goTo(4);
+        return bxSiema.goTo(4);
       });
