@@ -491,6 +491,7 @@ Navigation
 		z-index: 1;
 	}
 	&__slide {
+		// Lg
 		&.-kai {
 			width: 100%;
 			background: url(../../prod/img/services/lg/kai.jpg) no-repeat center center;
@@ -516,6 +517,32 @@ Navigation
 			background: url(../../prod/img/services/lg/spoon.jpg) no-repeat center center;
 			background-size: cover;
 		}
+		// Lr
+		&.-key {
+			width: 100%;
+			background: url(../../prod/img/services/lr/key.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&.-amilia {
+			width: 100%;
+			background: url(../../prod/img/services/lr/amilia.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&.-book {
+			width: 100%;
+			background: url(../../prod/img/services/lr/book.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&.-xo {
+			width: 100%;
+			background: url(../../prod/img/services/lr/xo.jpg) no-repeat center center;
+			background-size: cover;
+		}
+		&.-box {
+			width: 100%;
+			background: url(../../prod/img/services/lr/box.jpg) no-repeat center center;
+			background-size: cover;
+		}
 	}
 }
 .siema {
@@ -526,6 +553,11 @@ Navigation
 		right: 25%;
 		transform: translateX(52%);
 		z-index: 3;
+		&.-lr {
+			right: auto;
+			left: 25%;
+			transform: translateX(-48%);
+		}
 		li {
 			&:first-child .pgtn__line {
 				background: $accent;

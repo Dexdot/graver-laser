@@ -86,6 +86,9 @@
 	}
 	.service {
 		flex-direction: column;
+		&--lr {
+			flex-direction: column-reverse;
+		}
 		&__info {
 			width: 95%;
 			br {
@@ -99,6 +102,9 @@
 	.siema {
 		&__btns {
 			right: 50%;
+			&.-lr {
+				left: 50%;
+			}
 		}
 	}
 }

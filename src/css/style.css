@@ -722,6 +722,26 @@ Navigation
     width: 100%;
     background: url(../../prod/img/services/lg/spoon.jpg) no-repeat center center;
     background-size: cover; }
+  .service__slide.-key {
+    width: 100%;
+    background: url(../../prod/img/services/lr/key.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-amilia {
+    width: 100%;
+    background: url(../../prod/img/services/lr/amilia.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-book {
+    width: 100%;
+    background: url(../../prod/img/services/lr/book.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-xo {
+    width: 100%;
+    background: url(../../prod/img/services/lr/xo.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-box {
+    width: 100%;
+    background: url(../../prod/img/services/lr/box.jpg) no-repeat center center;
+    background-size: cover; }
 
 .siema__btns {
   display: -webkit-box;
@@ -734,6 +754,12 @@ Navigation
   -ms-transform: translateX(52%);
   transform: translateX(52%);
   z-index: 3; }
+  .siema__btns.-lr {
+    right: auto;
+    left: 25%;
+    -webkit-transform: translateX(-48%);
+    -ms-transform: translateX(-48%);
+    transform: translateX(-48%); }
   .siema__btns li:first-child .pgtn__line {
     background: #ff8000; }
 
@@ -881,6 +907,11 @@ Navigation
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column; }
+    .service--lr {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+      flex-direction: column-reverse; }
     .service__info {
       width: 95%; }
       .service__info br {
@@ -888,7 +919,9 @@ Navigation
     .service__slider {
       width: 95%; }
   .siema__btns {
-    right: 50%; } }
+    right: 50%; }
+    .siema__btns.-lr {
+      left: 50%; } }
 
 @media (max-width: 992px) {
   .nav {
