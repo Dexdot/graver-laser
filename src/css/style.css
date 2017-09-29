@@ -742,6 +742,26 @@ Navigation
     width: 100%;
     background: url(../../prod/img/services/lr/box.jpg) no-repeat center center;
     background-size: cover; }
+  .service__slide.-cock {
+    width: 100%;
+    background: url(../../prod/img/services/bx/cock.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-balsam {
+    width: 100%;
+    background: url(../../prod/img/services/bx/balsam.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-logo {
+    width: 100%;
+    background: url(../../prod/img/services/bx/logo.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-chebu {
+    width: 100%;
+    background: url(../../prod/img/services/bx/chebu.jpg) no-repeat center center;
+    background-size: cover; }
+  .service__slide.-lines {
+    width: 100%;
+    background: url(../../prod/img/services/bx/lines.jpg) no-repeat center center;
+    background-size: cover; }
 
 .siema__btns {
   display: -webkit-box;
