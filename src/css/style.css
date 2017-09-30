@@ -614,7 +614,7 @@ Navigation
     text-align: center;
     line-height: 24px; }
 
-/* Services */
+/* 4. Services */
 #services {
   background: #fff;
   width: 100%;
@@ -794,6 +794,128 @@ Navigation
   .siema__btn .pgtn__line {
     background: #fff;
     width: 50px; }
+
+/* 5. Portfolio */
+#portfolio {
+  background-color: #f9f9f9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  width: 100%; }
+
+.portfolio__header {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #ff8000;
+  font-size: 1.125rem;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.portfolio__title {
+  font-family: 'Panton', sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #292929;
+  font-size: 2.5rem;
+  margin-bottom: 4.375rem;
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-align: center; }
+
+.portfolio__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
+
+.portfolio__link {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  color: #ff8000; }
+
+.portfolio__cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-top: 2.5rem; }
+
+.portfolio {
+  position: relative;
+  -ms-flex-preferred-size: 250px;
+  flex-basis: 250px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+  .portfolio__img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .portfolio__overlay {
+    content: '';
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0; }
+    .portfolio__overlay:hover {
+      opacity: 1; }
+
+.watch-icon:hover {
+  cursor: pointer; }
+
+.watch-icon:focus {
+  outline: none; }
+
+.fancybox-button--thumbs {
+  display: none !important; }
+
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.5; }
 
 /* Media */
 @font-face {

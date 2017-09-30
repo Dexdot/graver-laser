@@ -418,7 +418,7 @@ Navigation
 
 
 
-/* Services */
+/* 4. Services */
 #services {
 	background: $white;
 	width: 100%;
@@ -602,6 +602,92 @@ Navigation
 			background: $white;
 			width: 50px;
 		}
+	}
+}
+
+
+
+/* 5. Portfolio */
+#portfolio {
+	background-color: #f9f9f9;
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+	width: 100%;
+}
+.portfolio {
+	&__header {
+		@include section-header;
+		text-align: center;
+	}
+	&__title {
+		@include section-title;
+		margin-bottom: 2.5rem;
+		text-align: center;
+	}
+	&__head {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+	}
+	&__link {
+		@include rbt(lt);
+		font-size: 1rem;
+		color: $accent;
+	}
+	&__cont {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin-top: 2.5rem;
+	}
+}
+.portfolio {
+	position: relative;
+	flex-basis: 250px;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	&__overlay {
+		content: '';
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: rgba(#000, 0.6);
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transition: all 0.4s;
+		opacity: 0;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.watch-icon {
+	&:hover {
+		cursor: pointer;
+	}
+	&:focus {
+		outline: none;
+	}
+}
+.fancybox {
+	&-button--thumbs {
+		display: none !important;
+	}
+	&-is-open .fancybox-bg {
+		opacity: 0.5;
 	}
 }
 
