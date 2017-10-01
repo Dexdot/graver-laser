@@ -201,3 +201,32 @@ $(document).ready(function() {
         $(this).children().css('background', '#ff8000');
         return bxSiema.goTo(4);
       });
+
+    /* Portfolio */
+      function printPortfolio() {
+        $('.siema__btns.-pf .pgtn__line').css('background', '#cccccb');
+        var sBtn = '.siema__btns.-pf .siema__btn-'+this.currentSlide;
+        $(sBtn).children().css('background', '#ff8000');
+      };
+
+      var pfSiema = new Siema({
+        selector: '.portfolio__wrap',
+        duration: 800,
+        easing: 'ease-out',
+        onInit: printPortfolio,
+        onChange: printPortfolio
+      });
+
+      var siemaBtn0 = document.querySelector('.siema__btns.-pf .siema__btn-0');
+      var siemaBtn1 = document.querySelector('.siema__btns.-pf .siema__btn-1');
+
+      siemaBtn0.addEventListener('click', function () {
+          $('.siema__btns.-pf .pgtn__line').css('background', '#cccccb');
+          $(this).children().css('background', '#ff8000');
+          return pfSiema.goTo(0);
+        });
+      siemaBtn1.addEventListener('click', function () {
+        $('.siema__btns.-pf .pgtn__line').css('background', '#cccccb');
+        $(this).children().css('background', '#ff8000');
+        return pfSiema.goTo(1);
+      });

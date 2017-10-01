@@ -224,6 +224,9 @@
 	}
 }
 
+
+// Other
+
 @media (max-height: 480px) and (orientation: landscape) {
   .nav {
   	justify-content: flex-start;
@@ -238,5 +241,11 @@
 @media (max-width: 325px) {
 	.siema__btns {
 		bottom: 75px;
+	}
+}
+
+@media (max-width: 520px) {
+	.portfolio {
+		max-width: 380px;
 	}
 }
