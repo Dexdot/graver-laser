@@ -615,6 +615,13 @@ Navigation
 	width: 100%;
 }
 .portfolio {
+	position: relative;
+	flex-basis: 250px;
+	max-width: 380px;
+	flex-grow: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	&__header {
 		@include section-header;
 		text-align: center;
@@ -639,18 +646,10 @@ Navigation
 		display: flex;
 		flex-direction: row;
 		align-items: center;
-		justify-content: space-between;
+		justify-content: center;
 		flex-wrap: wrap;
 		margin-top: 2.5rem;
 	}
-}
-.portfolio {
-	position: relative;
-	flex-basis: 250px;
-	flex-grow: 1;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	&__img {
 		display: block;
 		width: 100%;
@@ -675,6 +674,14 @@ Navigation
 	}
 }
 .watch-icon {
+	width: 55px;
+	height: 55px;
+	border-radius: 50%;
+	background-color: rgba(249, 249, 249, 0.4);
+	box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	&:hover {
 		cursor: pointer;
 	}
@@ -682,14 +689,48 @@ Navigation
 		outline: none;
 	}
 }
+
 .fancybox {
-	&-button--thumbs {
-		display: none !important;
+	&-button {
+		color: $white;
+		&--thumbs {
+			display: none !important;
+		}
+		&:hover:not([disabled]) {
+			color: $accent;
+			background: none;
+		}
 	}
+
 	&-is-open .fancybox-bg {
-		opacity: 0.5;
+		opacity: 0.7;
+	}
+	&-arrow {
+		opacity: 1 !important;
+		&::after {
+			background-color: transparent;
+			background-image: url(../../prod/img/portfolio/chevron.svg);
+			background-size: 35px 35px;
+		}
+		&:hover::after {
+			background-image: url(../../prod/img/portfolio/chevron-h.svg);
+		}
+		&--left {
+			left: 1rem;
+		}
+		&--right {
+			right: 1rem;
+		}
+	}
+	&-image-wrap {
+		box-shadow: 0px 22px 59px 0px rgba(0, 0, 0, 0.33);
+	}
+	&-show-nav &-arrow[disabled] {
+		opacity: 0.5 !important;
+	}
+	&-toolbar * {
+		background: none;
 	}
 }
-
 /* Media */
 @import "media";

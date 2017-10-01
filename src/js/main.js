@@ -52,6 +52,12 @@ $(document).ready(function() {
     $('.service__slider--bx .service__slide').height(siemaSlideBxHeight);
   });
 
+// FancyBox
+    $("[data-fancybox]").fancybox({
+      protect: true,
+      animationEffect : "fade", // fade, zoom, zoom-in-out
+      transitionEffect : "fade", // fade, slide, circular, tube, rotate,
+    });
 });
 
 // Siema
