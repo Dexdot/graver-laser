@@ -20,8 +20,7 @@ $(document).ready(function() {
       speed: 1400,
       infinite: true,
       draggable: false,
-      autoplay: true,
-      autoplaySpeed: 8000,
+      autoplay: false,
       dots: true,
       arrows: false,
     });
@@ -256,4 +255,34 @@ $(document).ready(function() {
         $(this).children().css('background', '#ff8000');
         return pfSiema.goTo(1);
       });
+    
+    /* CLients */
+      function printClients() {
+        $('.siema__btns.-cl .pgtn__line').css('background', '#bdbdbd');
+        var sBtn = '.siema__btns.-cl .siema__btn-'+this.currentSlide;
+        $(sBtn).children().css('background', '#ff8000');
+      };
+
+      var clSiema = new Siema({
+        selector: '.clients__slider',
+        duration: 800,
+        easing: 'ease-out',
+        onInit: printClients,
+        onChange: printClients
+      });
+
+      var siemaBtn0 = document.querySelector('.siema__btns.-cl .siema__btn-0');
+      var siemaBtn1 = document.querySelector('.siema__btns.-cl .siema__btn-1');
+
+      siemaBtn0.addEventListener('click', function () {
+          $('.siema__btns.-cl .pgtn__line').css('background', '#bdbdbd');
+          $(this).children().css('background', '#ff8000');
+          return clSiema.goTo(0);
+        });
+      siemaBtn1.addEventListener('click', function () {
+        $('.siema__btns.-cl .pgtn__line').css('background', '#bdbdbd');
+        $(this).children().css('background', '#ff8000');
+        return clSiema.goTo(1);
+      });
+
 console.log('Main logo/Buttons->PopUps/Adaptive services images/Portfolio video/5 stage icon');

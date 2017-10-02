@@ -226,6 +226,12 @@
 	.order-call {
 		font-size: 1.4rem;
 	}
+	.clients {
+		flex-wrap: wrap;
+	}
+	.client {
+		margin-top: 8px;
+	}
 }
 
 // xl
@@ -287,5 +293,11 @@
 				right: 3%;
 			}
 		}
+	}
+}
+
+@media (max-width: 423px) {
+	.clients {
+		flex-direction: column;
 	}
 }

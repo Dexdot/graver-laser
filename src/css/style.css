@@ -784,7 +784,7 @@ Navigation
     -webkit-transform: translateX(-48%);
     -ms-transform: translateX(-48%);
     transform: translateX(-48%); }
-  .siema__btns.-pf {
+  .siema__btns.-pf, .siema__btns.-cl {
     bottom: 5rem;
     right: 50%; }
   .siema__btns li:first-child .pgtn__line {
@@ -1071,6 +1071,94 @@ Navigation
     text-align: left;
     margin-top: 18px; }
 
+/* 7. Clients */
+#clients {
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  background: url(../../prod/img/clients/bg-cl.jpg) no-repeat center center;
+  background-size: cover;
+  position: relative; }
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .clients__slide {
+    padding: 10px 10px 20px 10px;
+    overflow: hidden; }
+  .clients__header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #ff8000;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    text-align: center; }
+  .clients__title {
+    font-family: 'Panton', sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #292929;
+    font-size: 2.5rem;
+    margin-bottom: 4.375rem;
+    text-transform: uppercase;
+    text-align: center; }
+
+.client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 14.375rem;
+  height: 10.125rem;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 35px 20px;
+  background-color: #fff;
+  border: 1px solid #e1e1e1;
+  -webkit-transition: -webkit-box-shadow 0.8s;
+  transition: -webkit-box-shadow 0.8s;
+  -o-transition: box-shadow 0.8s;
+  transition: box-shadow 0.8s;
+  transition: box-shadow 0.8s, -webkit-box-shadow 0.8s;
+  -webkit-box-shadow: 0px 6px 27px 0px rgba(49, 48, 48, 0.24);
+  box-shadow: 0px 6px 27px 0px rgba(49, 48, 48, 0.24); }
+  .client:hover {
+    -webkit-box-shadow: 0px 6px 10px 0px rgba(49, 48, 48, 0.09);
+    box-shadow: 0px 6px 10px 0px rgba(49, 48, 48, 0.09); }
+    .client:hover img {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0); }
+  .client img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    -webkit-transition: -webkit-filter 0.5s;
+    transition: -webkit-filter 0.5s;
+    -o-transition: filter 0.5s;
+    transition: filter 0.5s;
+    transition: filter 0.5s, -webkit-filter 0.5s; }
+  .client--sm img {
+    max-width: 70%; }
+
 /* Media */
 @font-face {
   font-family: 'Panton';
@@ -1150,6 +1238,38 @@ Navigation
   html {
     font-size: 17px; } }
 
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; }
+  .main__header {
+    font-size: 2rem; }
+  .main__title {
+    font-size: 1.7rem; }
+  .hw__name {
+    width: auto;
+    font-size: 1.9rem; }
+    .hw__name-line {
+      display: none; }
+  .service__slide.-spoon {
+    background-position: left center; }
+  .service__slide.-kai {
+    background-size: 200%; }
+  .siema__btn {
+    width: 40px; }
+    .siema__btn .pgtn__line {
+      width: 40px; }
+  .stages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .stage__wrap {
+    margin: 3rem 0rem 0 0rem;
+    min-width: 150px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; } }
+
 @media (max-width: 992px) {
   .nav {
     -webkit-box-orient: vertical;
@@ -1195,7 +1315,12 @@ Navigation
     color: #292929;
     font-size: 1.4rem; }
   .order-call {
-    font-size: 1.4rem; } }
+    font-size: 1.4rem; }
+  .clients {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .client {
+    margin-top: 8px; } }
 
 @media (max-width: 767px) {
   #about {
@@ -1247,38 +1372,6 @@ Navigation
     .siema__btns.-lr {
       left: 50%; } }
 
-@media (max-width: 480px) {
-  html {
-    font-size: 12px; }
-  .main__header {
-    font-size: 2rem; }
-  .main__title {
-    font-size: 1.7rem; }
-  .hw__name {
-    width: auto;
-    font-size: 1.9rem; }
-    .hw__name-line {
-      display: none; }
-  .service__slide.-spoon {
-    background-position: left center; }
-  .service__slide.-kai {
-    background-size: 200%; }
-  .siema__btn {
-    width: 40px; }
-    .siema__btn .pgtn__line {
-      width: 40px; }
-  .stages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .stage__wrap {
-    margin: 3rem 0rem 0 0rem;
-    min-width: 150px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start; } }
-
 @media (max-height: 480px) and (orientation: landscape) {
   .nav {
     -webkit-box-pack: start;
@@ -1308,3 +1401,10 @@ Navigation
     left: 3%; }
   .fancybox-arrow--right {
     right: 3%; } }
+
+@media (max-width: 423px) {
+  .clients {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; } }
