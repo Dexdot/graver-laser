@@ -83,7 +83,45 @@ $(document).ready(function() {
         if(hash == '#autoplay'){
             $('#tinymce').find('.fancybox-media').trigger('click');
         }
+
+// Yandex.Maps
+      ymaps.ready(init);
+      var myMap, myPlacemark;
+
+      function init(){ 
+        myMap = new ymaps.Map("map", {
+          center: [55.774431, 49.143685],
+          zoom: 16,
+        }); 
+
+        myPlacemark = new ymaps.Placemark([55.774431, 49.143685], {
+          hintContent: '"Гравер Лазер" - Казань, ул. Качалова, д.76',
+          balloonContent: ''
+        }, {
+                iconLayout: 'default#image',
+                iconImageHref: './prod/img/point.png',
+                iconImageSize: [130, 110],
+                iconImageOffset: [-38, -115]
+              });
+        myMap.geoObjects.add(myPlacemark);  
+        myMap.behaviors.disable('scrollZoom');
+      }
+
+// Footer links hover
+    $('.footer__link--inst').mouseenter(function() {
+      $('symbol#inst path').css('fill', '#ff8000');
     });
+    $('.footer__link--inst').mouseleave(function() {
+      $('symbol#inst path').css('fill', '#fff');
+    });
+    $('.footer__link--vk').mouseenter(function() {
+      $('symbol#vk path').css('fill', '#ff8000');
+    });
+    $('.footer__link--vk').mouseleave(function() {
+      $('symbol#vk path').css('fill', '#fff');
+    });
+
+});
 
 // Siema
 

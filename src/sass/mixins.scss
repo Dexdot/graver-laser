@@ -41,10 +41,6 @@
 }
 
 @mixin rbt($style) {
-	@if $style == th {
-		font-family: 'Roboto', sans-serif;
-		font-weight: 100;
-	}
 	@if $style == lt {
 		font-family: 'Roboto', sans-serif;
 		font-weight: 300;

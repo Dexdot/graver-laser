@@ -50,6 +50,27 @@
 			align-items: flex-start;
 		}
 	}
+	.callback {
+		&__title {
+			font-size: 2.1rem;
+			line-height: 1.5;
+		}
+		&__address {
+			font-size: 1.6rem;
+		}
+		&__phone {
+			font-size: 2.3rem;
+		}
+	}
+	.form {
+		&__name, &__email {
+			float: none;
+			width: 100%;
+		}
+		&__btn {
+			width: 100%;
+		}
+	}
 }
 
 // sm
@@ -121,6 +142,29 @@
 			}
 		}
 	}
+	.callback {
+		flex-direction: column-reverse;
+		&__form, &__info {
+			width: 90%;
+		}
+		&__info {
+			margin-top: 3rem;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	.footer {
+		&__copyright {
+			display: none;
+		}
+		&__social {
+			&-title {
+				display: none;
+			}
+			width: auto;
+			justify-content: flex-start;
+		}
+	}
 }
 
 // md
@@ -157,6 +201,29 @@
 			padding: 3rem 3rem 3rem 2.3rem;
 		}
 	}
+	.callback {
+		&__info {
+			width: 45%;
+		}
+		&__form {
+			width: 50%;
+		}
+	}
+	.footer {
+		&__logo {
+			width: 16.875rem;
+		}
+		&__copyright {
+			font-size: 1.1rem;
+		}
+		&__social {
+			&-title {
+				display: none;
+			}
+			width: auto;
+			justify-content: flex-start;
+		}
+	}
 }
 
 // lg
@@ -178,6 +245,14 @@
 		&__mercury {
 			width: 32rem;
 			margin-bottom: 17%;
+		}
+	}
+	.footer {
+		&__logo {
+			width: 16.875rem;
+		}
+		&__copyright {
+			font-size: 1.1rem;
 		}
 	}
 }
