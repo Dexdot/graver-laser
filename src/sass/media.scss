@@ -40,7 +40,16 @@
 			}
 		}
 	}
-
+	.stages {
+		flex-direction: column;
+	}
+	.stage {
+		&__wrap {
+			margin: 3rem 0rem 0 0rem;
+			min-width: 150px;
+			align-items: flex-start;
+		}
+	}
 }
 
 // sm
@@ -54,6 +63,11 @@
 		}
 		&__title {
 			font-size: 2.5rem;
+		}
+	}
+	.stage {
+		&__wrap {
+			margin: 3rem 1.85rem 0 1.85rem;
 		}
 	}
 }

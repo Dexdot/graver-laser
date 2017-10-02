@@ -466,6 +466,7 @@ Navigation
 		@include rbt(lt);
 		font-size: 1rem;
 		text-align: left;
+		line-height: 24px;
 	}
 	&__order {
 		width: 10.625rem;
@@ -708,7 +709,6 @@ Navigation
 		outline: none;
 	}
 }
-
 .fancybox {
 	&-button {
 		color: $white;
@@ -751,5 +751,66 @@ Navigation
 		background: none;
 	}
 }
+
+
+/* 6. Stages */
+#stages {
+	padding-top: 6.25rem;
+	padding-bottom: 6.25rem;
+	background-color: $white;
+}
+.stages {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: row;
+	flex-wrap: wrap;
+	&__header {
+		@include section-header;
+		text-align: center;
+	}
+	&__title {
+		@include section-title;
+		text-align: center;
+		margin-bottom: 1.375rem;
+	}
+}
+.stage {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	&__wrap {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: flex-start;
+		flex-grow: 1;
+		margin: 3rem 1rem 0 1rem;
+	}
+	&__title {
+		@include rbt(reg);
+		color: $boldBlack;
+		font-size: 1.37rem;
+		margin-left: 10px;
+	}
+	&__line {
+		display: block;
+		width: 70px;
+		height: 3px;
+		background-color: $accent;
+		margin-top: 20px;
+	}
+	&__descr {
+		@include rbt(lt);
+		color: $ltBlack;
+		font-size: 1rem;
+		line-height: 21px;
+		text-align: left;
+		margin-top: 18px;
+	}
+}
+
+
 /* Media */
 @import "media";

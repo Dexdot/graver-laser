@@ -256,3 +256,4 @@ $(document).ready(function() {
         $(this).children().css('background', '#ff8000');
         return pfSiema.goTo(1);
       });
+console.log('Main logo/Buttons->PopUps/Adaptive services images/Portfolio video/5 stage icon');
