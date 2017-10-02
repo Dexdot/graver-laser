@@ -1,5 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg"
-	xmlns:xlink="http://www.w3.org/1999/xlink"
-	width="27px" height="26px" viewBox="0 0 27 26">
-<clipPath id="clip0"><circle cx="13.00" cy="13.00" r="13.00"/></clipPath><circle cx="13.00" cy="13.00" r="13.00" fill="none" stroke="rgb(255,127,0)" stroke-width="2.00px" clip-path="url(#clip0)"/><path fillRule="evenodd" d="M 16.93 12.83C 16.93 12.83 11.31 9.01 11.31 9.01 11.25 8.97 11.17 8.96 11.11 9 11.05 9.03 11.01 9.09 11.01 9.16 11.01 9.16 11.01 16.81 11.01 16.81 11.01 16.88 11.05 16.95 11.11 16.98 11.14 16.99 11.17 17 11.2 17 11.24 17 11.28 16.99 11.31 16.97 11.31 16.97 16.93 13.14 16.93 13.14 16.98 13.11 17.01 13.05 17.01 12.99 17.01 12.92 16.98 12.86 16.93 12.83Z" fill="rgb(255,127,0)"/></svg>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve" width="512px" height="512px">
+<g>
+	<g>
+		<path d="M256,0C114.608,0,0,114.608,0,256s114.608,256,256,256s256-114.608,256-256S397.392,0,256,0z M256,496    C123.664,496,16,388.336,16,256S123.664,16,256,16s240,107.664,240,240S388.336,496,256,496z" fill="#ff8000"/>
+	</g>
+</g>
+<g>
+	<g>
+		<polygon points="189.776,141.328 189.776,370.992 388.672,256.16   " fill="#ff8000"/>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</svg>

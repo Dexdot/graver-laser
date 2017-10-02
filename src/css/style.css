@@ -313,8 +313,7 @@ Navigation
     background-color: #ff8000;
     color: #fff; }
   .btn-purchase:focus {
-    outline: none;
-    border: 1px solid #fff; }
+    outline: none; }
   .btn-purchase:active {
     padding-top: 3px; }
 
@@ -699,6 +698,10 @@ Navigation
     .service__order:hover {
       cursor: pointer;
       background-color: #ff8000; }
+    .service__order:focus {
+      outline: none; }
+    .service__order:active {
+      padding-top: 2px; }
   .service__slider {
     width: 50%;
     z-index: 1; }
@@ -810,7 +813,6 @@ Navigation
   position: relative;
   -ms-flex-preferred-size: 250px;
   flex-basis: 250px;
-  max-width: 450px;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
@@ -859,7 +861,21 @@ Navigation
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 1rem;
-    color: #ff8000; }
+    color: #ff8000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .portfolio__link--icon {
+      margin-right: 13px; }
+    .portfolio__link:hover, .portfolio__link:focus, .portfolio__link:visited, .portfolio__link:active {
+      color: #ff8000;
+      outline: none; }
   .portfolio__cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -871,9 +887,9 @@ Navigation
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-top: 2.5rem; }
@@ -906,8 +922,8 @@ Navigation
       opacity: 1; }
 
 .watch-icon {
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   background-color: rgba(249, 249, 249, 0.4);
   -webkit-box-shadow: 0px 0px 21px 0px rgba(0, 0, 0, 0.29);
@@ -946,9 +962,9 @@ Navigation
   .fancybox-arrow:hover::after {
     background-image: url(../../prod/img/portfolio/chevron-h.svg); }
   .fancybox-arrow--left {
-    left: 1rem; }
+    left: 10%; }
   .fancybox-arrow--right {
-    right: 1rem; }
+    right: 10%; }
 
 .fancybox-image-wrap {
   -webkit-box-shadow: 0px 22px 59px 0px rgba(0, 0, 0, 0.33);
@@ -1036,27 +1052,6 @@ Navigation
 @media (min-width: 1600px) {
   html {
     font-size: 17px; } }
-
-@media (max-width: 480px) {
-  html {
-    font-size: 12px; }
-  .main__header {
-    font-size: 2rem; }
-  .main__title {
-    font-size: 1.7rem; }
-  .hw__name {
-    width: auto;
-    font-size: 1.9rem; }
-    .hw__name-line {
-      display: none; }
-  .service__slide.-spoon {
-    background-position: left center; }
-  .service__slide.-kai {
-    background-size: 200%; }
-  .siema__btn {
-    width: 40px; }
-    .siema__btn .pgtn__line {
-      width: 40px; } }
 
 @media (max-width: 992px) {
   .nav {
@@ -1155,6 +1150,27 @@ Navigation
     .siema__btns.-lr {
       left: 50%; } }
 
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; }
+  .main__header {
+    font-size: 2rem; }
+  .main__title {
+    font-size: 1.7rem; }
+  .hw__name {
+    width: auto;
+    font-size: 1.9rem; }
+    .hw__name-line {
+      display: none; }
+  .service__slide.-spoon {
+    background-position: left center; }
+  .service__slide.-kai {
+    background-size: 200%; }
+  .siema__btn {
+    width: 40px; }
+    .siema__btn .pgtn__line {
+      width: 40px; } }
+
 @media (max-height: 480px) and (orientation: landscape) {
   .nav {
     -webkit-box-pack: start;
@@ -1172,3 +1188,15 @@ Navigation
 @media (max-width: 520px) {
   .portfolio {
     max-width: 380px; } }
+
+@media (max-width: 910px) {
+  .fancybox-arrow--left {
+    left: 0; }
+  .fancybox-arrow--right {
+    right: 0; } }
+
+@media (max-width: 1140px) {
+  .fancybox-arrow--left {
+    left: 3%; }
+  .fancybox-arrow--right {
+    right: 3%; } }

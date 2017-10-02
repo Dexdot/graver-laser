@@ -249,3 +249,29 @@
 		max-width: 380px;
 	}
 }
+
+@media (max-width: 910px) {
+	.fancybox {
+		&-arrow {
+			&--left {
+				left: 0;
+			}
+			&--right {
+				right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.fancybox {
+		&-arrow {
+			&--left {
+				left: 3%;
+			}
+			&--right {
+				right: 3%;
+			}
+		}
+	}
+}

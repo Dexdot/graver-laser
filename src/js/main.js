@@ -20,7 +20,6 @@ $(document).ready(function() {
       speed: 1400,
       infinite: true,
       draggable: false,
-      swipe: false,
       autoplay: true,
       autoplaySpeed: 8000,
       dots: true,
@@ -55,10 +54,37 @@ $(document).ready(function() {
 // FancyBox
     $("[data-fancybox]").fancybox({
       protect: true,
-      animationEffect : "fade", // fade, zoom, zoom-in-out
+      animationEffect : "zoom-in-out", // fade, zoom, zoom-in-out
       transitionEffect : "fade", // fade, slide, circular, tube, rotate,
     });
-});
+    $('.fancybox-media').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+            width       : 1280,
+            height      : 720,
+            maxWidth    : '100%',
+            maxHeight   : '100%',  
+            padding     : 0,
+            margin      : 0,           
+        helpers : {
+          media : {
+              youtube : {
+                   params : {
+                       theme : 'light',
+                             vq    : 'hd720',
+                             css   : {
+                                'body' : 'color: #fff'
+                             } 
+                   }
+              } 
+          }
+        }
+      });
+        var hash = location.hash;
+        if(hash == '#autoplay'){
+            $('#tinymce').find('.fancybox-media').trigger('click');
+        }
+    });
 
 // Siema
 
