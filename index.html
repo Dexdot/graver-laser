@@ -45,7 +45,7 @@
               <li><a href="#callback" class="nav__link">Контакты</a></li>
               <div class="nav__contacts">
                 <a href="tel:+78432157272" class="phone"><span class="phone__code">+7 843</span> 215-72-72</a>
-                <a href="#" class="order-call">Заказать звонок</a>
+                <a class="order-call">Заказать звонок</a>
               </div>
             </ul>
           </nav>
@@ -600,11 +600,11 @@
             <a href="mailto:galeev-12@mail.ru" class="callback__email">galeev-12@mail.ru</a>
           </div>
           <div class="callback__form">
-            <form class="form" action="handler.php" method="POST">
-              <input type="hidden" name="whatever" value="Главная форма">
-                <input class="form__name" type="text" placeholder="Ваше имя" name="username" required>
+            <form class="form" action="cost.php" method="POST">
+              <input type="hidden" name="whatever" value="Основная форма">
+                <input class="form__name" type="text" placeholder="Имя" name="username" required>
                 <input class="form__email" type="email" placeholder="Эл. почта" name="email" required>
-              <textarea class="form__msg" name="message" rows="4" placeholder="Ваше сообщение"></textarea>
+              <textarea class="form__msg" name="msg" rows="4" placeholder="Ваше сообщение"></textarea>
               <button class="form__btn">Узнать стоимость</button>
             </form>
           </div>
@@ -647,7 +647,64 @@
       </div>
     </footer>
 
-    
+    <!-- Modal Cost -->
+      <div class="modal-cost">
+        <div class="container">
+          <div class="modal-cost-overlay">
+            <div class="modal-cost">
+              <form class="form" action="cost.php" method="POST">
+                <p class="modal-cost-header">Узнать стоимость</p>
+                <input type="hidden" name="whatever" value="'Узнать стоимость'">
+                  <input class="form__name" type="text" placeholder="Имя" name="username" required>
+                  <input class="form__email" type="email" placeholder="Эл. почта" name="email" required>
+                <textarea class="form__msg" name="msg" rows="4" placeholder="Ваше сообщение"></textarea>
+                <button class="form__btn">Отправить</button>
+              </form>
+              <span class="modal-cost-close">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Modal Cost -->
+
+    <!-- Modal Enroll -->
+      <div class="modal-enroll">
+        <div class="container">
+          <div class="modal-enroll-overlay">
+            <div class="modal-enroll">
+              <form class="form" action="cost.php" method="POST">
+                <p class="modal-enroll-header">Заказать</p>
+                <input type="hidden" name="whatever" value="Форма заказа">
+                  <input class="form__name" type="text" placeholder="Имя" name="username" required>
+                  <input class="form__email" type="email" placeholder="Эл. почта" name="email" required>
+                <textarea class="form__msg" name="msg" rows="4" placeholder="Ваше сообщение"></textarea>
+                <button class="form__btn">Отправить</button>
+              </form>
+              <span class="modal-enroll-close">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Modal Enroll -->
+
+    <!-- Modal Callback -->
+      <div class="modal-call">
+        <div class="container">
+          <div class="modal-call-overlay">
+            <div class="modal-call">
+              <form class="form" action="call.php" method="POST">
+                <p class="modal-call-header">Обратный звонок</p>
+                <input type="hidden" name="whatever" value="Обратный звонок">
+                  <input class="form__name" type="text" placeholder="Имя" name="username" required>
+                  <input class="form__phone" type="tel" placeholder="Телефон" name="phone" required id="phone">
+                <button class="form__btn">Позвоните мне</button>
+              </form>
+              <span class="modal-call-close">&times;</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- End Modal Callback -->
     
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -1,6 +1,6 @@
 $(document).ready(function() {
 // Menu navigation script (toggling)
-    $('.hamburger, .nav__link').click(function() {
+    $('.hamburger, .nav__link, .order-call').click(function() {
       $('.hamburger').toggleClass('is-active');
       $('.nav').toggleClass('__active');
     });
@@ -119,6 +119,31 @@ $(document).ready(function() {
     });
     $('.footer__link--vk').mouseleave(function() {
       $('symbol#vk path').css('fill', '#fff');
+    });
+
+// Modals
+    $('.btn-purchase').on('click', function() {
+      $('.modal-cost-overlay').fadeIn();
+      $('.modal-cost-overlay').css('display', 'flex');
+    });
+    $('.modal-cost-close').on('click', function() {
+      $('.modal-cost-overlay').fadeOut();
+    });
+
+    $('.service__order').on('click', function() {
+      $('.modal-enroll-overlay').fadeIn();
+      $('.modal-enroll-overlay').css('display', 'flex');
+    });
+    $('.modal-enroll-close').on('click', function() {
+      $('.modal-enroll-overlay').fadeOut();
+    });
+
+    $('a.order-call').on('click', function() {
+      $('.modal-call-overlay').fadeIn();
+      $('.modal-call-overlay').css('display', 'flex');
+    });
+    $('.modal-call-close').on('click', function() {
+      $('.modal-call-overlay').fadeOut();
     });
 
 });

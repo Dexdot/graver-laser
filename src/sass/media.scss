@@ -71,6 +71,16 @@
 			width: 100%;
 		}
 	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 80%;
+			.form {
+				&__btn {
+					width: 100%;
+				}
+			}
+		}
+	}
 }
 
 // sm
@@ -89,6 +99,16 @@
 	.stage {
 		&__wrap {
 			margin: 3rem 1.85rem 0 1.85rem;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 380px;
+			.form {
+				&__btn {
+					width: 65%;
+				}
+			}
 		}
 	}
 }
@@ -224,6 +244,16 @@
 			justify-content: flex-start;
 		}
 	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 50%;
+			.form {
+				&__btn {
+					width: 65%;
+				}
+			}
+		}
+	}
 }
 
 // lg
@@ -253,6 +283,16 @@
 		}
 		&__copyright {
 			font-size: 1.1rem;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 50%;
+			.form {
+				&__btn {
+					width: 65%;
+				}
+			}
 		}
 	}
 }

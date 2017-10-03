@@ -128,6 +128,7 @@ Navigation
 	font-size: 1rem;
 	&:hover {
 		color: $accent;
+		cursor: pointer;
 	}
 	&:focus {
 		color: $accent;
@@ -947,7 +948,10 @@ Navigation
 		background: url(../../prod/img/form/envelope.svg);
 		float: right;
 	}
-	&__name, &__email, &__msg {
+	&__phone {
+		background: url(../../prod/img/form/phone.svg);
+	}
+	&__name, &__email, &__msg, &__phone {
 		width: 45%;
 		border: none;
 		border-bottom: 1px solid #c1c1c1;
@@ -1060,5 +1064,64 @@ Navigation
 		margin-left: 20px;
 	}
 }
+
+
+
+/* Modals */
+// Cost
+.modal {
+	&-cost, &-enroll, &-call {
+		position: relative;
+		background-color: $white;
+		width: 40%;
+		&-overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100vh;
+			z-index: 5;
+			background-color: rgba(0, 0, 0, 0.7);
+			display: none;
+			align-items: center;
+			justify-content: center;
+		}
+		&-header {
+			@include ptn(bold);
+			color: $boldBlack;
+			font-size: 1.875rem;
+			text-transform: uppercase;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+		&-close {
+			position: absolute;
+			right: 1rem;
+			top: 0;
+			display: inline-block;
+			color: $accent;
+			font-size: 3rem;
+			&:hover {
+				cursor: pointer;
+			}
+		}
+		.form {
+			border: none;
+			height: 100%;
+			padding: 3rem 2.5rem;
+		}
+	}
+	&-call {
+		.form {
+			padding: 4.375rem;
+			&__name, &__phone {
+				width: 100%;
+				float: none;
+			}
+		}
+	}
+}
+
+
 /* Media */
 @import "media";
