@@ -133,6 +133,7 @@ Navigation
 	8. Callback
 	9. Map
 	10. Footer
+	11. Modals
 */
 /* 1. Main */
 #main {
@@ -707,66 +708,39 @@ Navigation
   .service__slider {
     width: 50%;
     z-index: 1; }
-  .service__slide.-kai {
-    width: 100%;
-    background: url(../../prod/img/services/lg/kai.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-beer {
-    width: 100%;
-    background: url(../../prod/img/services/lg/beer.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-ring {
-    width: 100%;
-    background: url(../../prod/img/services/lg/ring.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-popov {
-    width: 100%;
-    background: url(../../prod/img/services/lg/popov.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-spoon {
-    width: 100%;
-    background: url(../../prod/img/services/lg/spoon.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-key {
-    width: 100%;
-    background: url(../../prod/img/services/lr/key.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-amilia {
-    width: 100%;
-    background: url(../../prod/img/services/lr/amilia.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-book {
-    width: 100%;
-    background: url(../../prod/img/services/lr/book.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-xo {
-    width: 100%;
-    background: url(../../prod/img/services/lr/xo.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-box {
-    width: 100%;
-    background: url(../../prod/img/services/lr/box.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-cock {
-    width: 100%;
-    background: url(../../prod/img/services/bx/cock.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-balsam {
-    width: 100%;
-    background: url(../../prod/img/services/bx/balsam.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-logo {
-    width: 100%;
-    background: url(../../prod/img/services/bx/logo.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-chebu {
-    width: 100%;
-    background: url(../../prod/img/services/bx/chebu.jpg) no-repeat center center;
-    background-size: cover; }
-  .service__slide.-lines {
-    width: 100%;
-    background: url(../../prod/img/services/bx/lines.jpg) no-repeat center center;
-    background-size: cover; }
+  .service__slide {
+    background-size: cover;
+    width: 100%; }
+    .service__slide.-kai {
+      background: url(../../prod/img/services/lg/kai.jpg) no-repeat center center; }
+    .service__slide.-beer {
+      background: url(../../prod/img/services/lg/beer.jpg) no-repeat center center; }
+    .service__slide.-ring {
+      background: url(../../prod/img/services/lg/ring.jpg) no-repeat center center; }
+    .service__slide.-popov {
+      background: url(../../prod/img/services/lg/popov.jpg) no-repeat center center; }
+    .service__slide.-spoon {
+      background: url(../../prod/img/services/lg/spoon.jpg) no-repeat center center; }
+    .service__slide.-key {
+      background: url(../../prod/img/services/lr/key.jpg) no-repeat center center; }
+    .service__slide.-amilia {
+      background: url(../../prod/img/services/lr/amilia.jpg) no-repeat center center; }
+    .service__slide.-book {
+      background: url(../../prod/img/services/lr/book.jpg) no-repeat center center; }
+    .service__slide.-xo {
+      background: url(../../prod/img/services/lr/xo.jpg) no-repeat center center; }
+    .service__slide.-box {
+      background: url(../../prod/img/services/lr/box.jpg) no-repeat center center; }
+    .service__slide.-cock {
+      background: url(../../prod/img/services/bx/cock.jpg) no-repeat center center; }
+    .service__slide.-balsam {
+      background: url(../../prod/img/services/bx/balsam.jpg) no-repeat center center; }
+    .service__slide.-logo {
+      background: url(../../prod/img/services/bx/logo.jpg) no-repeat center center; }
+    .service__slide.-chebu {
+      background: url(../../prod/img/services/bx/chebu.jpg) no-repeat center center; }
+    .service__slide.-lines {
+      background: url(../../prod/img/services/bx/lines.jpg) no-repeat center center; }
 
 .siema__btns {
   display: -webkit-box;
@@ -1386,12 +1360,12 @@ Navigation
   .footer__link {
     margin-left: 20px; }
 
-/* Modals */
-.modal-cost, .modal-enroll, .modal-call {
+/* 11. Modals */
+.modal-cost, .modal-enroll, .modal-call, .modal-success {
   position: relative;
   background-color: #fff;
   width: 40%; }
-  .modal-cost-overlay, .modal-enroll-overlay, .modal-call-overlay {
+  .modal-cost-overlay, .modal-enroll-overlay, .modal-call-overlay, .modal-success-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -1406,7 +1380,7 @@ Navigation
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center; }
-  .modal-cost-header, .modal-enroll-header, .modal-call-header {
+  .modal-cost-header, .modal-enroll-header, .modal-call-header, .modal-success-header {
     font-family: 'Panton', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -1415,25 +1389,125 @@ Navigation
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 3rem; }
-  .modal-cost-close, .modal-enroll-close, .modal-call-close {
+  .modal-cost-close, .modal-enroll-close, .modal-call-close, .modal-success-close {
     position: absolute;
     right: 1rem;
     top: 0;
     display: inline-block;
     color: #ff8000;
     font-size: 3rem; }
-    .modal-cost-close:hover, .modal-enroll-close:hover, .modal-call-close:hover {
+    .modal-cost-close:hover, .modal-enroll-close:hover, .modal-call-close:hover, .modal-success-close:hover {
       cursor: pointer; }
-  .modal-cost .form, .modal-enroll .form, .modal-call .form {
+  .modal-cost .form, .modal-enroll .form, .modal-call .form, .modal-success .form {
     border: none;
     height: 100%;
     padding: 3rem 2.5rem; }
+
+.modal-icon {
+  display: block;
+  margin: 5rem auto 2.8rem auto; }
+
+.modal-success {
+  width: 30%; }
+  .modal-success-descr {
+    font-size: 1.25rem;
+    color: #8b8b8b;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 5rem; }
 
 .modal-call .form {
   padding: 4.375rem; }
   .modal-call .form__name, .modal-call .form__phone {
     width: 100%;
     float: none; }
+
+.modal-video {
+  -webkit-box-shadow: 0 22px 59px 0 rgba(0, 0, 0, 0.33);
+  box-shadow: 0 22px 59px 0 rgba(0, 0, 0, 0.33);
+  width: 50%;
+  height: 60%;
+  position: relative;
+  display: block;
+  margin: -7% auto 0 auto; }
+  .modal-video-2, .modal-video-3, .modal-video-4 {
+    display: none; }
+  .modal-video iframe {
+    width: 100%;
+    height: 100%; }
+  .modal-video-overlay {
+    z-index: 5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .modal-video-close {
+    position: absolute;
+    right: 6rem;
+    top: 1rem;
+    display: inline-block;
+    color: #fff;
+    font-size: 3rem;
+    -webkit-transition: color 0.3s;
+    -o-transition: color 0.3s;
+    transition: color 0.3s; }
+    .modal-video-close:hover {
+      cursor: pointer;
+      color: #ff8000; }
+  .modal-video-nav {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    .modal-video-nav-link {
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: cover;
+      width: 120px;
+      height: 70px;
+      margin: 30px 1rem 0;
+      -webkit-box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.33);
+      box-shadow: 0px 8px 24px 0px rgba(0, 0, 0, 0.33); }
+      .modal-video-nav-link--1 {
+        background-image: url(../../prod/img/portfolio/thumbs/engrav.png);
+        border: 1px solid #ff8000; }
+      .modal-video-nav-link--2 {
+        background-image: url(../../prod/img/portfolio/thumbs/cut.png); }
+      .modal-video-nav-link--3 {
+        background-image: url(../../prod/img/portfolio/thumbs/kai.png); }
+      .modal-video-nav-link--4 {
+        background-image: url(../../prod/img/portfolio/thumbs/wood.png); }
+      .modal-video-nav-link img {
+        display: block;
+        margin: 0 auto;
+        height: auto;
+        max-width: 100%; }
 
 /* Media */
 @font-face {
@@ -1463,10 +1537,18 @@ Navigation
     font-size: 2.5rem; }
   .stage__wrap {
     margin: 3rem 1.85rem 0 1.85rem; }
-  .modal-cost, .modal-enroll, .modal-call {
+  .modal-cost, .modal-enroll, .modal-call, .modal-success {
     width: 380px; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
-      width: 65%; } }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+      width: 65%; }
+  .modal-video {
+    width: 70%;
+    height: 50%;
+    margin: -25% auto 0; }
+    .modal-video-nav {
+      bottom: 60px; }
+      .modal-video-nav-link {
+        width: 95px; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   html {
@@ -1508,10 +1590,16 @@ Navigation
     justify-content: flex-start; }
     .footer__social-title {
       display: none; }
-  .modal-cost, .modal-enroll, .modal-call {
+  .modal-cost, .modal-enroll, .modal-call, .modal-success {
     width: 50%; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
-      width: 65%; } }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+      width: 65%; }
+  .modal-success {
+    width: 40%; }
+  .modal-video {
+    width: 60%;
+    height: 50%;
+    margin: -20% auto 0; } }
 
 @media (min-width: 991px) {
   .hamburger {
@@ -1536,62 +1624,16 @@ Navigation
     width: 16.875rem; }
   .footer__copyright {
     font-size: 1.1rem; }
-  .modal-cost, .modal-enroll, .modal-call {
+  .modal-cost, .modal-enroll, .modal-call, .modal-success {
     width: 50%; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
-      width: 65%; } }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+      width: 65%; }
+  .modal-success {
+    width: 35%; } }
 
 @media (min-width: 1600px) {
   html {
     font-size: 17px; } }
-
-@media (max-width: 480px) {
-  html {
-    font-size: 12px; }
-  .main__header {
-    font-size: 2rem; }
-  .main__title {
-    font-size: 1.7rem; }
-  .hw__name {
-    width: auto;
-    font-size: 1.9rem; }
-    .hw__name-line {
-      display: none; }
-  .service__slide.-spoon {
-    background-position: left center; }
-  .service__slide.-kai {
-    background-size: 200%; }
-  .siema__btn {
-    width: 40px; }
-    .siema__btn .pgtn__line {
-      width: 40px; }
-  .stages {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-  .stage__wrap {
-    margin: 3rem 0rem 0 0rem;
-    min-width: 150px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: flex-start; }
-  .callback__title {
-    font-size: 2.1rem;
-    line-height: 1.5; }
-  .callback__address {
-    font-size: 1.6rem; }
-  .callback__phone {
-    font-size: 2.3rem; }
-  .form__name, .form__email {
-    float: none;
-    width: 100%; }
-  .form__btn {
-    width: 100%; }
-  .modal-cost, .modal-enroll, .modal-call {
-    width: 80%; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
-      width: 100%; } }
 
 @media (max-width: 992px) {
   .nav {
@@ -1717,6 +1759,80 @@ Navigation
     .footer__social-title {
       display: none; } }
 
+@media (max-width: 480px) {
+  html {
+    font-size: 12px; }
+  .main__header {
+    font-size: 2rem; }
+  .main__title {
+    font-size: 1.7rem; }
+  .hw__name {
+    width: auto;
+    font-size: 1.9rem; }
+    .hw__name-line {
+      display: none; }
+  .service__info {
+    padding: 3rem 2rem; }
+  .service__slide.-spoon {
+    background-position: 20% center; }
+  .service__slide.-book, .service__slide.-balsam, .service__slide.-chebu {
+    background-position: 30% center; }
+  .service__slide.-kai, .service__slide.-amilia {
+    background-size: 200%; }
+  .siema__btn {
+    width: 38px; }
+    .siema__btn .pgtn__line {
+      width: 38px; }
+  .stages {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .stage__wrap {
+    margin: 3rem 0rem 0 0rem;
+    min-width: 150px;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start; }
+  .callback__title {
+    font-size: 2.1rem;
+    line-height: 1.5; }
+  .callback__address {
+    font-size: 1.6rem; }
+  .callback__phone {
+    font-size: 2.3rem; }
+  .form__name, .form__email {
+    float: none;
+    width: 100%; }
+  .form__btn {
+    width: 100%; }
+  .modal-cost, .modal-enroll, .modal-call, .modal-success {
+    width: 80%; }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+      width: 100%; }
+    .modal-cost-header, .modal-enroll-header, .modal-call-header, .modal-success-header {
+      font-size: 16px; }
+  .modal-video {
+    width: 85%;
+    height: 40%;
+    margin: -50% auto 0; }
+    .modal-video-close {
+      right: auto;
+      top: 0;
+      left: 20px;
+      font-size: 4rem; }
+    .modal-video-nav {
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      bottom: 60px;
+      width: 95%; }
+      .modal-video-nav-link {
+        margin: 5px;
+        width: 95px; } }
+
 @media (max-height: 480px) and (orientation: landscape) {
   .nav {
     -webkit-box-pack: start;
@@ -1726,10 +1842,6 @@ Navigation
     padding-top: 5%; }
     .nav__link {
       font-size: 1rem; } }
-
-@media (max-width: 325px) {
-  .siema__btns {
-    bottom: 75px; } }
 
 @media (max-width: 520px) {
   .portfolio {

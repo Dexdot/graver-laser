@@ -23,20 +23,26 @@
 		}
 	}
 	.service {
+		&__info {
+			padding: 3rem 2rem;
+		}
 		&__slide {
 			&.-spoon {
-				background-position: left center;
+				background-position: 20% center;
 			}
-			&.-kai {
+			&.-book, &.-balsam, &.-chebu {
+				background-position: 30% center;
+			}
+			&.-kai, &.-amilia {
 				background-size: 200%;
 			}
 		}
 	}
 	.siema {
 		&__btn {
-			width: 40px;
+			width: 38px;
 			.pgtn__line {
-				width: 40px;
+				width: 38px;
 			}
 		}
 	}
@@ -72,11 +78,35 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call {
+		&-cost, &-enroll, &-call, &-success {
 			width: 80%;
 			.form {
 				&__btn {
 					width: 100%;
+				}
+			}
+			&-header {
+				font-size: 16px;
+			}
+		}
+		&-video {
+			width: 85%;
+			height: 40%;
+			margin: -50% auto 0;
+			&-close {
+				right: auto;
+				top: 0;
+				left: 20px;
+				font-size: 4rem;
+			}
+			&-nav {
+				flex-wrap: wrap;
+				justify-content: center;
+				bottom: 60px;
+				width: 95%;
+				&-link {
+					margin: 5px;
+					width: 95px;
 				}
 			}
 		}
@@ -102,11 +132,22 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call {
+		&-cost, &-enroll, &-call, &-success {
 			width: 380px;
 			.form {
 				&__btn {
 					width: 65%;
+				}
+			}
+		}
+		&-video {
+			width: 70%;
+			height: 50%;
+			margin: -25% auto 0;
+			&-nav {
+				bottom: 60px;
+				&-link {
+					width: 95px;
 				}
 			}
 		}
@@ -245,13 +286,21 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call {
+		&-cost, &-enroll, &-call, &-success {
 			width: 50%;
 			.form {
 				&__btn {
 					width: 65%;
 				}
 			}
+		}
+		&-success {
+			width: 40%;
+		}
+		&-video {
+			width: 60%;
+			height: 50%;
+			margin: -20% auto 0;
 		}
 	}
 }
@@ -286,13 +335,16 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call {
+		&-cost, &-enroll, &-call, &-success {
 			width: 50%;
 			.form {
 				&__btn {
 					width: 65%;
 				}
 			}
+		}
+		&-success {
+			width: 35%;
 		}
 	}
 }
@@ -373,11 +425,11 @@
   }
 }
 
-@media (max-width: 325px) {
-	.siema__btns {
-		bottom: 75px;
-	}
-}
+// @media (max-width: 325px) {
+// 	.siema__btns {
+// 		bottom: 75px;
+// 	}
+// }
 
 @media (max-width: 520px) {
 	.portfolio {

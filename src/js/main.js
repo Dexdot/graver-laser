@@ -53,36 +53,10 @@ $(document).ready(function() {
 // FancyBox
     $("[data-fancybox]").fancybox({
       protect: true,
-      animationEffect : "zoom-in-out", // fade, zoom, zoom-in-out
-      transitionEffect : "fade", // fade, slide, circular, tube, rotate,
+      animationEffect : "zoom-in-out",
+      transitionEffect : "fade",
     });
-    $('.fancybox-media').fancybox({
-        openEffect  : 'none',
-        closeEffect : 'none',
-            width       : 1280,
-            height      : 720,
-            maxWidth    : '100%',
-            maxHeight   : '100%',  
-            padding     : 0,
-            margin      : 0,           
-        helpers : {
-          media : {
-              youtube : {
-                   params : {
-                       theme : 'light',
-                             vq    : 'hd720',
-                             css   : {
-                                'body' : 'color: #fff'
-                             } 
-                   }
-              } 
-          }
-        }
-      });
-        var hash = location.hash;
-        if(hash == '#autoplay'){
-            $('#tinymce').find('.fancybox-media').trigger('click');
-        }
+
 
 // Yandex.Maps
       ymaps.ready(init);
@@ -146,6 +120,36 @@ $(document).ready(function() {
       $('.modal-call-overlay').fadeOut();
     });
 
+    $('.modal-success-close').on('click', function() {
+      $('.modal-success-overlay').fadeOut();
+    });
+
+    $('.portfolio__link').on('click', function() {
+      $('.modal-video-overlay').fadeIn();
+      $('.modal-video-overlay').css('display', 'flex');
+    });
+    $('.modal-video-close').on('click', function() {
+      $('.modal-video-overlay').fadeOut();
+      $("iframe").each(function() {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+      });
+    });
+
+// Video portfolio
+    var thumb = $('.modal-video-nav-link'),
+        video = $('.modal-video iframe');
+    thumb.on('click', function() {
+      thumb.css('border', 'none');
+      $(this).css('border', '1px solid #ff8000');
+      $("iframe").each(function() {
+        $(this)[0].contentWindow.postMessage('{"event":"command","func":"stopVideo","args":""}', '*')
+      });
+      var currVideo = '.' + $(this).children('a').attr('modal-video');
+      video.fadeOut();
+      video.hide();
+      $(currVideo).hide();
+      $(currVideo).fadeIn();
+    });
 });
 
 // Siema
@@ -319,7 +323,7 @@ $(document).ready(function() {
         return pfSiema.goTo(1);
       });
     
-    /* CLients */
+    /* Clients */
       function printClients() {
         $('.siema__btns.-cl .pgtn__line').css('background', '#bdbdbd');
         var sBtn = '.siema__btns.-cl .siema__btn-'+this.currentSlide;
@@ -348,4 +352,5 @@ $(document).ready(function() {
         return clSiema.goTo(1);
       });
 
-console.log('Main logo/Buttons->PopUps/Adaptive services images/Portfolio video/5 stage icon');
+
+console.log('modal-success-overlay after mail send + sms, lg adaptive');
