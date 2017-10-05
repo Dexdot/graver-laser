@@ -401,13 +401,75 @@
 	}
 }
 
-// xl
-@media (min-width: 1200px) {
+@media (min-width: 1400px) {
+	html {
+		font-size: 17px;
+	}
+	.header {
+		&__nav {
+			max-width: 70%;
+		}
+	}
+	.callback {
+		&__form {
+			width: 45%;
+		}
+	}
+	.modal {
+		&-call, &-cost, &-enroll {
+			width: 35%;
+		}
+	}
 }
 
 @media (min-width: 1600px) {
 	html {
-		font-size: 17px;
+		font-size: 18px;
+	}
+	.header {
+		&__nav {
+			max-width: 65%;
+		}
+	}
+	.callback {
+		&__form {
+			width: 45%;
+		}
+	}
+	.portfolio {
+		flex-basis: 300px;
+	}
+}
+
+@media (min-width: 1800px) {
+	html {
+		font-size: 19px;
+	}
+	.header {
+		&__nav {
+			max-width: 60%;
+		}
+	}
+	.callback {
+		&__title {
+			br {display: none;}
+		}
+		&__form {
+			width: 40%;
+		}
+	}
+	.portfolio {
+		flex-basis: 350px;
+	}
+	.modal {
+		&-call, &-cost, &-enroll {
+			width: 32%;
+		}
+	}
+	.main {
+		&__header, &__title {
+			line-height: 1.3;
+		}
 	}
 }
 
@@ -424,12 +486,6 @@
   	}
   }
 }
-
-// @media (max-width: 325px) {
-// 	.siema__btns {
-// 		bottom: 75px;
-// 	}
-// }
 
 @media (max-width: 520px) {
 	.portfolio {

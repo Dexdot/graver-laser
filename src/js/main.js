@@ -353,4 +353,4 @@ $(document).ready(function() {
       });
 
 
-console.log('modal-success-overlay after mail send + sms, lg adaptive');
+console.log('mail + sms, landscape, social-links');

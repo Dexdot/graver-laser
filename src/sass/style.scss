@@ -226,6 +226,7 @@ Navigation
 		max-width: 33rem;
 		margin-bottom: 5.625rem;
 		line-height: 23px;
+		font-size: 1rem;
 	}
 }
 .hw {
@@ -1043,7 +1044,7 @@ Navigation
 	&-cost, &-enroll, &-call, &-success {
 		position: relative;
 		background-color: $white;
-		width: 40%;
+		width: 30%;
 		&-overlay {
 			position: fixed;
 			top: 0;
@@ -1059,10 +1060,10 @@ Navigation
 		&-header {
 			@include ptn(bold);
 			color: $boldBlack;
-			font-size: 1.875rem;
+			font-size: 1.5rem;
 			text-transform: uppercase;
 			text-align: center;
-			margin-bottom: 3rem;
+			margin-bottom: 2rem;
 		}
 		&-close {
 			position: absolute;
@@ -1070,7 +1071,7 @@ Navigation
 			top: 0;
 			display: inline-block;
 			color: $accent;
-			font-size: 3rem;
+			font-size: 2.5rem;
 			&:hover {
 				cursor: pointer;
 			}
@@ -1078,7 +1079,16 @@ Navigation
 		.form {
 			border: none;
 			height: 100%;
-			padding: 3rem 2.5rem;
+			padding: 2rem;
+			&__name, &__email, &__msg {
+				font-size: 0.8rem;
+				background-size: 19px;
+			}
+			&__btn {
+				width: 13.875rem;
+				height: 3rem;
+				font-size: 0.8rem;
+			}
 		}
 	}
 	&-icon {
@@ -1111,7 +1121,10 @@ Navigation
 		height: 60%;
 		position: relative;
 		display: block;
-		margin: -7% auto 0 auto;
+		margin-top: -7%;
+		// margin-right: auto;
+		margin-bottom: 0px;
+		// margin-left: auto;
 		&-2, &-3, &-4 {
 			display: none;
 		}
