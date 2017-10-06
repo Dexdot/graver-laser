@@ -57,7 +57,8 @@ $(document).ready(function() {
       transitionEffect : "fade",
     });
 
-
+// Masked phone input
+    $("#phone").mask("+7 (999) 999-99-99");
 // Yandex.Maps
       ymaps.ready(init);
       var myMap, myPlacemark;
@@ -150,6 +151,88 @@ $(document).ready(function() {
       $(currVideo).hide();
       $(currVideo).fadeIn();
     });
+
+// PHPMailer AJAX
+    $('.modal-call .form').submit(function() {
+      $.ajax({
+        url: './call.php',
+        type: 'POST',
+        data: $(this).serialize()
+      })
+      .done(function() {
+        $('.modal-call-overlay').fadeOut();
+        $('.modal-success-overlay--call').css('opacity', 0);
+        $('.modal-success-overlay--call').css('display', 'flex');
+        $('.modal-success-overlay--call').animate({opacity: 1}, 1200);
+        $('.modal-call .form').find('input, textarea').val('');
+        $('.modal-call .form').trigger('reset');
+      })
+      .fail(function() {
+        alert('Не удалось отправить сообщение. Пожалуйста, повторите попытку');
+      });
+      
+      return false;
+    });
+    $('.callback__form .form').submit(function() {
+      $.ajax({
+        url: './cost.php',
+        type: 'POST',
+        data: $(this).serialize()
+      })
+      .done(function() {
+        $('.modal-success-overlay--order').css('opacity', 0);
+        $('.modal-success-overlay--order').css('display', 'flex');
+        $('.modal-success-overlay--order').animate({opacity: 1}, 1200);
+        $('.callback__form .form').find('input, textarea').val('');
+        $('.callback__form .form').trigger('reset');
+      })
+      .fail(function() {
+        alert('Не удалось отправить сообщение. Пожалуйста, повторите попытку');
+      });
+
+      return false;
+    });
+    $('.modal-enroll .form').submit(function() {
+      $.ajax({
+        url: './cost.php',
+        type: 'POST',
+        data: $(this).serialize()
+      })
+      .done(function() {
+        $('.modal-enroll-overlay').fadeOut();
+        $('.modal-success-overlay--order').css('opacity', 0);
+        $('.modal-success-overlay--order').css('display', 'flex');
+        $('.modal-success-overlay--order').animate({opacity: 1}, 1200);
+        $('.modal-enroll .form').find('input, textarea').val('');
+        $('.modal-enroll .form').trigger('reset');
+      })
+      .fail(function() {
+        alert('Не удалось отправить сообщение. Пожалуйста, повторите попытку');
+      });
+
+      return false;
+    });
+    $('.modal-cost .form').submit(function() {
+      $.ajax({
+        url: './cost.php',
+        type: 'POST',
+        data: $(this).serialize()
+      })
+      .done(function() {
+        $('.modal-cost-overlay').fadeOut();
+        $('.modal-success-overlay--order').css('opacity', 0);
+        $('.modal-success-overlay--order').css('display', 'flex');
+        $('.modal-success-overlay--order').animate({opacity: 1}, 1200);
+        $('.modal-cost .form').find('input, textarea').val('');
+        $('.modal-cost .form').trigger('reset');
+      })
+      .fail(function() {
+        alert('Не удалось отправить сообщение. Пожалуйста, повторите попытку');
+      });
+
+      return false;
+    });
+
 });
 
 // Siema
@@ -351,6 +434,3 @@ $(document).ready(function() {
         $(this).children().css('background', '#ff8000');
         return clSiema.goTo(1);
       });
-
-
-console.log('mail + sms, landscape, social-links');

@@ -271,7 +271,7 @@ Navigation
   .main__header {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.7rem;
+    font-size: 2.4rem;
     font-family: 'Panton', sans-serif;
     font-weight: bold;
     font-style: normal;
@@ -280,7 +280,7 @@ Navigation
   .main__title {
     text-transform: uppercase;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     font-family: 'Panton', sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -291,7 +291,7 @@ Navigation
     color: #e4e4e4;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 1.20rem;
+    font-size: 1rem;
     text-align: center; }
 
 .btn-purchase {
@@ -1169,16 +1169,18 @@ Navigation
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    width: 40%; }
+    width: 40%;
+    max-width: 550px; }
   .callback__form {
-    width: 55%; }
+    width: 40%; }
   .callback__header {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #ff8000;
     font-size: 1.125rem;
     margin-bottom: 15px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-size: 0.9rem; }
   .callback__title {
     font-family: 'Panton', sans-serif;
     font-weight: bold;
@@ -1188,26 +1190,27 @@ Navigation
     margin-bottom: 4.375rem;
     text-transform: uppercase;
     text-transform: none;
-    line-height: 46px;
-    margin-bottom: 1.875rem; }
+    line-height: 1.4;
+    margin-bottom: 1.5rem;
+    font-size: 2rem; }
   .callback__label {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #a3a3a3;
-    font-size: 1.125rem;
+    font-size: 0.9rem;
     text-transform: uppercase; }
   .callback__address {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #292929;
-    font-size: 1.625rem;
-    margin-bottom: 25px; }
+    font-size: 1.5rem;
+    margin-bottom: 20px; }
   .callback__phone {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     color: #292929;
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 18px;
     -webkit-transition: color 0.3s;
     -o-transition: color 0.3s;
     transition: color 0.3s; }
@@ -1218,13 +1221,13 @@ Navigation
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     color: #ff8000;
-    font-size: 1.625rem; }
+    font-size: 1.5rem; }
     .callback__email:hover, .callback__email:focus, .callback__email:visited {
       color: #ff8000; }
 
 .form {
   border: 10px solid #f1f1f1;
-  padding: 4.375rem 2.5rem;
+  padding: 3.375rem 2.5rem;
   width: 100%; }
   .form__name {
     background: url(../../prod/img/form/user.svg);
@@ -1239,15 +1242,15 @@ Navigation
     border: none;
     border-bottom: 1px solid #c1c1c1;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding-bottom: 10px;
     padding-left: 30px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
     background-repeat: no-repeat;
     background-position: left 3px;
-    background-size: 23px;
+    background-size: 19px;
     resize: none; }
     .form__name::-webkit-input-placeholder, .form__email::-webkit-input-placeholder, .form__msg::-webkit-input-placeholder, .form__phone::-webkit-input-placeholder {
       color: #c1c1c1; }
@@ -1263,7 +1266,7 @@ Navigation
     border: none;
     border-bottom: 1px solid #c1c1c1;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     padding-bottom: 10px;
@@ -1272,7 +1275,7 @@ Navigation
     background: url(../../prod/img/form/plane.svg);
     background-repeat: no-repeat;
     background-position: left 3px;
-    background-size: 23px;
+    background-size: 19px;
     resize: none; }
     .form__msg::-webkit-input-placeholder {
       color: #c1c1c1; }
@@ -1290,12 +1293,13 @@ Navigation
     text-transform: uppercase;
     display: block;
     margin: 0 auto;
-    width: 18.875rem;
-    height: 4.375rem;
+    width: 15rem;
+    width: 60%;
+    height: 3.5rem;
     color: #fff;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.8rem;
     -webkit-transition: -webkit-box-shadow 0.3s;
     transition: -webkit-box-shadow 0.3s;
     -o-transition: box-shadow 0.3s;
@@ -1308,6 +1312,11 @@ Navigation
     .form__btn:hover {
       -webkit-box-shadow: 0px 6px 21px 0px rgba(255, 128, 0, 0.4);
       box-shadow: 0px 6px 21px 0px rgba(255, 128, 0, 0.4); }
+
+/* 9. Map */
+#map {
+  width: 100%;
+  height: 500px; }
 
 /* 10. Footer */
 #footer {
@@ -1331,14 +1340,14 @@ Navigation
   -ms-flex-direction: row;
   flex-direction: row; }
   .footer__logo {
-    width: 18.75rem; }
+    width: 16.75rem; }
     .footer__logo img {
       display: block;
       max-width: 100%;
       height: auto; }
   .footer__copyright {
     color: #9a9a9a;
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-align: center; }
@@ -1352,14 +1361,14 @@ Navigation
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 16.875rem; }
+    width: 14.875rem; }
     .footer__social-title {
       color: #fff;
-      font-size: 1.25rem;
+      font-size: 1rem;
       font-family: 'Roboto', sans-serif;
       font-weight: 400; }
   .footer__link {
-    margin-left: 20px; }
+    margin-left: 10px; }
 
 /* 11. Modals */
 .modal-cost, .modal-enroll, .modal-call, .modal-success {
@@ -1403,7 +1412,7 @@ Navigation
     border: none;
     height: 100%;
     padding: 2rem; }
-    .modal-cost .form__name, .modal-cost .form__email, .modal-cost .form__msg, .modal-enroll .form__name, .modal-enroll .form__email, .modal-enroll .form__msg, .modal-call .form__name, .modal-call .form__email, .modal-call .form__msg, .modal-success .form__name, .modal-success .form__email, .modal-success .form__msg {
+    .modal-cost .form__name, .modal-cost .form__email, .modal-cost .form__msg, .modal-cost .form__phone, .modal-enroll .form__name, .modal-enroll .form__email, .modal-enroll .form__msg, .modal-enroll .form__phone, .modal-call .form__name, .modal-call .form__email, .modal-call .form__msg, .modal-call .form__phone, .modal-success .form__name, .modal-success .form__email, .modal-success .form__msg, .modal-success .form__phone {
       font-size: 0.8rem;
       background-size: 19px; }
     .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
@@ -1413,21 +1422,23 @@ Navigation
 
 .modal-icon {
   display: block;
-  margin: 5rem auto 2.8rem auto; }
+  margin: 3rem auto 2.5rem auto; }
 
 .modal-success {
-  width: 30%; }
+  width: 25%; }
+  .modal-success-header {
+    font-size: 1.4rem; }
   .modal-success-descr {
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: #8b8b8b;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     line-height: 22px;
     text-align: center;
-    margin-bottom: 5rem; }
+    margin-bottom: 3rem; }
 
 .modal-call .form {
-  padding: 4.375rem; }
+  padding: 2.5rem 2rem; }
   .modal-call .form__name, .modal-call .form__phone {
     width: 100%;
     float: none; }
@@ -1546,10 +1557,12 @@ Navigation
     font-size: 2.5rem; }
   .stage__wrap {
     margin: 3rem 1.85rem 0 1.85rem; }
-  .modal-cost, .modal-enroll, .modal-call, .modal-success {
-    width: 380px; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+  .modal-cost, .modal-enroll, .modal-call {
+    width: 340px; }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
       width: 65%; }
+  .modal-success {
+    width: 270px; }
   .modal-video {
     width: 70%;
     height: 50%;
@@ -1557,7 +1570,12 @@ Navigation
     .modal-video-nav {
       bottom: 60px; }
       .modal-video-nav-link {
-        width: 95px; } }
+        width: 95px; }
+  .callback__form {
+    width: 80%;
+    max-width: 470px; }
+    .callback__form .form__name, .callback__form .form__email, .callback__form .form__msg {
+      margin-bottom: 3.5rem; } }
 
 @media (min-width: 768px) and (max-width: 991px) {
   html {
@@ -1599,12 +1617,14 @@ Navigation
     justify-content: flex-start; }
     .footer__social-title {
       display: none; }
-  .modal-cost, .modal-enroll, .modal-call, .modal-success {
-    width: 50%; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+  .modal-cost, .modal-enroll, .modal-success {
+    width: 345px; }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-success .form__btn {
       width: 65%; }
   .modal-success {
-    width: 40%; }
+    width: 290px; }
+  .modal-call {
+    width: 310px; }
   .modal-video {
     width: 60%;
     height: 50%;
@@ -1633,22 +1653,27 @@ Navigation
     width: 16.875rem; }
   .footer__copyright {
     font-size: 1.1rem; }
-  .modal-cost, .modal-enroll, .modal-call, .modal-success {
-    width: 50%; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
+  .modal-cost, .modal-enroll, .modal-call {
+    width: 350px; }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
       width: 65%; }
   .modal-success {
-    width: 35%; } }
+    width: 300px; } }
 
 @media (min-width: 1400px) {
   html {
     font-size: 17px; }
   .header__nav {
     max-width: 70%; }
-  .callback__form {
-    width: 45%; }
-  .modal-call, .modal-cost, .modal-enroll {
-    width: 35%; } }
+  .callback {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .callback__form {
+      width: 460px; }
+      .callback__form .form__name, .callback__form .form__email, .callback__form .form__msg {
+        margin-bottom: 3.5rem; }
+  .modal-call {
+    width: 400px; } }
 
 @media (min-width: 1600px) {
   html {
@@ -1656,10 +1681,12 @@ Navigation
   .header__nav {
     max-width: 65%; }
   .callback__form {
-    width: 45%; }
+    width: 490px; }
   .portfolio {
     -ms-flex-preferred-size: 300px;
-    flex-basis: 300px; } }
+    flex-basis: 300px; }
+  .modal-cost, .modal-enroll, .modal-success {
+    width: 460px; } }
 
 @media (min-width: 1800px) {
   html {
@@ -1669,12 +1696,12 @@ Navigation
   .callback__title br {
     display: none; }
   .callback__form {
-    width: 40%; }
+    width: 550px; }
   .portfolio {
     -ms-flex-preferred-size: 350px;
     flex-basis: 350px; }
   .modal-call, .modal-cost, .modal-enroll {
-    width: 32%; }
+    width: 460px; }
   .main__header, .main__title {
     line-height: 1.3; } }
 
@@ -1732,31 +1759,43 @@ Navigation
     -webkit-box-direction: reverse;
     -ms-flex-direction: column-reverse;
     flex-direction: column-reverse; }
-    .callback__form, .callback__info {
-      width: 90%; }
+    .callback__form .form__name, .callback__form .form__email, .callback__form .form__msg, .callback__form .form__btn {
+      font-size: 1rem; }
+    .callback__form .form__btn {
+      height: 4rem;
+      max-width: 280px; }
+    .callback__info {
+      width: 100%; }
     .callback__info {
       margin-top: 3rem;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center;
       text-align: center; }
-  .footer__copyright {
-    display: none; }
-  .footer__social {
-    width: auto;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: flex-start; }
-    .footer__social-title {
-      display: none; } }
+  .footer {
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    .footer__copyright {
+      display: none; }
+    .footer__social {
+      width: auto;
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .footer__social-title {
+        display: none; }
+  .modal-cost .form__name, .modal-cost .form__email, .modal-cost .form__msg, .modal-cost .form__phone, .modal-enroll .form__name, .modal-enroll .form__email, .modal-enroll .form__msg, .modal-enroll .form__phone, .modal-call .form__name, .modal-call .form__email, .modal-call .form__msg, .modal-call .form__phone, .modal-success .form__name, .modal-success .form__email, .modal-success .form__msg, .modal-success .form__phone {
+    font-size: 0.9rem; } }
 
 @media (max-width: 480px) {
   html {
     font-size: 12px; }
   .main__header {
-    font-size: 2rem; }
+    font-size: 2rem;
+    line-height: 1.7; }
   .main__title {
-    font-size: 1.7rem; }
+    font-size: 1.7rem;
+    line-height: 1.7; }
   .hw__name {
     width: auto;
     font-size: 1.9rem; }
@@ -1792,17 +1831,28 @@ Navigation
     font-size: 1.6rem; }
   .callback__phone {
     font-size: 2.3rem; }
+  .callback__form {
+    width: 90%; }
+    .callback__form .form__btn {
+      font-size: 0.9rem; }
+  .form__name, .form__email, .form__msg {
+    margin-bottom: 25px; }
   .form__name, .form__email {
     float: none;
     width: 100%; }
   .form__btn {
     width: 100%; }
-  .modal-cost, .modal-enroll, .modal-call, .modal-success {
-    width: 80%; }
-    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn, .modal-success .form__btn {
-      width: 100%; }
-    .modal-cost-header, .modal-enroll-header, .modal-call-header, .modal-success-header {
+  .modal-cost, .modal-enroll, .modal-call {
+    width: 80%;
+    max-width: 320px; }
+    .modal-cost .form__btn, .modal-enroll .form__btn, .modal-call .form__btn {
+      width: 100%;
+      height: 3.5rem; }
+    .modal-cost-header, .modal-enroll-header, .modal-call-header {
       font-size: 16px; }
+  .modal-success {
+    width: 80%;
+    max-width: 270px; }
   .modal-video {
     width: 85%;
     height: 40%;
@@ -1822,7 +1872,9 @@ Navigation
       width: 95%; }
       .modal-video-nav-link {
         margin: 5px;
-        width: 95px; } }
+        width: 95px; }
+  #map {
+    height: 300px; } }
 
 @media (max-width: 992px) {
   .nav {
@@ -1868,6 +1920,9 @@ Navigation
   .phone {
     color: #292929;
     font-size: 1.4rem; }
+    .phone__code {
+      font-family: 'Roboto', sans-serif;
+      font-weight: 500; }
   .order-call {
     font-size: 1.4rem; }
   .clients {
@@ -1884,7 +1939,12 @@ Navigation
     line-height: 2.5;
     padding-top: 5%; }
     .nav__link {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  .modal-cost .form__btn, .modal-enroll .form__btn {
+    height: 3rem; }
+  .modal-video-close {
+    right: auto;
+    left: 2rem; } }
 
 @media (max-width: 520px) {
   .portfolio {

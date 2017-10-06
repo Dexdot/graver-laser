@@ -19,13 +19,13 @@ $mail->Password = 'password';
 $mail->SMTPSecure = 'ssl';
 $mail->Port = 465;
 
-$mail->setFrom('d3xdot@gmail.com', 'Заявка с Лазер-Гравер');
+$mail->setFrom('d3xdot@gmail.com', 'Обратный звонок с Лазер-Гравер');
 $mail->addAddress('dolotter@bk.ru');
 //$mail->addAttachment('/var/tmp/file.tar.gz');         // Add attachments
 //$mail->addAttachment('/tmp/image.jpg', 'new.jpg');    // Optional name
 $mail->isHTML(true);
 
-$mail->Subject = 'Заявка с Лазер-Гравер';
+$mail->Subject = 'Обратный звонок с Лазер-Гравер';
 $mail->Body    = $message;
 
 if(!$mail->send()) {

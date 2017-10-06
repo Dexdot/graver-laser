@@ -8,9 +8,11 @@
 	.main {
 		&__header {
 			font-size: 2rem;
+			line-height: 1.7;
 		}
 		&__title {
 			font-size: 1.7rem;
+			line-height: 1.7;
 		}
 	}
 	.hw {
@@ -67,8 +69,19 @@
 		&__phone {
 			font-size: 2.3rem;
 		}
+		&__form {
+			width: 90%;
+			.form {
+				&__btn {
+					font-size: 0.9rem;
+				}
+			}
+		}
 	}
 	.form {
+		&__name, &__email, &__msg {
+			margin-bottom: 25px;
+		}
 		&__name, &__email {
 			float: none;
 			width: 100%;
@@ -78,16 +91,22 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call, &-success {
+		&-cost, &-enroll, &-call {
 			width: 80%;
+			max-width: 320px;
 			.form {
 				&__btn {
 					width: 100%;
+					height: 3.5rem;
 				}
 			}
 			&-header {
 				font-size: 16px;
 			}
+		}
+		&-success {
+			width: 80%;
+			max-width: 270px;
 		}
 		&-video {
 			width: 85%;
@@ -111,6 +130,9 @@
 			}
 		}
 	}
+	#map {
+		height: 300px;
+	}
 }
 
 // sm
@@ -132,13 +154,16 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call, &-success {
-			width: 380px;
+		&-cost, &-enroll, &-call {
+			width: 340px;
 			.form {
 				&__btn {
 					width: 65%;
 				}
 			}
+		}
+		&-success {
+			width: 270px;
 		}
 		&-video {
 			width: 70%;
@@ -150,6 +175,17 @@
 					width: 95px;
 				}
 			}
+		}
+	}
+	.callback {
+		&__form {
+			.form {
+				&__name, &__email, &__msg {
+					margin-bottom: 3.5rem;
+				}
+			}
+			width: 80%;
+			max-width: 470px;
 		}
 	}
 }
@@ -205,8 +241,19 @@
 	}
 	.callback {
 		flex-direction: column-reverse;
-		&__form, &__info {
-			width: 90%;
+		&__form {
+			.form {
+				&__name, &__email, &__msg, &__btn {
+					font-size: 1rem;
+				}
+				&__btn {
+					height: 4rem;
+					max-width: 280px;
+				}
+			}
+		}
+		&__info {
+			width: 100%;
 		}
 		&__info {
 			margin-top: 3rem;
@@ -215,6 +262,7 @@
 		}
 	}
 	.footer {
+		justify-content: space-around;
 		&__copyright {
 			display: none;
 		}
@@ -224,6 +272,15 @@
 			}
 			width: auto;
 			justify-content: flex-start;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call, &-success {
+			.form {
+				&__name, &__email, &__msg, &__phone {
+					font-size: 0.9rem;
+				}
+			}
 		}
 	}
 }
@@ -286,8 +343,8 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call, &-success {
-			width: 50%;
+		&-cost, &-enroll, &-success {
+			width: 345px;
 			.form {
 				&__btn {
 					width: 65%;
@@ -295,7 +352,10 @@
 			}
 		}
 		&-success {
-			width: 40%;
+			width: 290px;
+		}
+		&-call {
+			width: 310px;
 		}
 		&-video {
 			width: 60%;
@@ -335,8 +395,8 @@
 		}
 	}
 	.modal {
-		&-cost, &-enroll, &-call, &-success {
-			width: 50%;
+		&-cost, &-enroll, &-call {
+			width: 350px;
 			.form {
 				&__btn {
 					width: 65%;
@@ -344,7 +404,7 @@
 			}
 		}
 		&-success {
-			width: 35%;
+			width: 300px;
 		}
 	}
 }
@@ -389,6 +449,9 @@
 	.phone {
 		color: $boldBlack;
 		font-size: 1.4rem;
+		&__code {
+			@include rbt(md);
+		}
 	}
 	.order-call {
 		font-size: 1.4rem;
@@ -411,14 +474,18 @@
 		}
 	}
 	.callback {
+		justify-content: space-around;
 		&__form {
-			width: 45%;
+			width: 460px;
+			.form {
+				&__name, &__email, &__msg {
+					margin-bottom: 3.5rem;
+				}
+			}
 		}
 	}
-	.modal {
-		&-call, &-cost, &-enroll {
-			width: 35%;
-		}
+	.modal-call {
+		width: 400px;
 	}
 }
 
@@ -433,11 +500,16 @@
 	}
 	.callback {
 		&__form {
-			width: 45%;
+			width: 490px;
 		}
 	}
 	.portfolio {
 		flex-basis: 300px;
+	}
+	.modal {
+		&-cost, &-enroll, &-success {
+			width: 460px;
+		}
 	}
 }
 
@@ -455,7 +527,7 @@
 			br {display: none;}
 		}
 		&__form {
-			width: 40%;
+			width: 550px;
 		}
 	}
 	.portfolio {
@@ -463,7 +535,7 @@
 	}
 	.modal {
 		&-call, &-cost, &-enroll {
-			width: 32%;
+			width: 460px;
 		}
 	}
 	.main {
@@ -483,6 +555,17 @@
   	padding-top: 5%;
   	&__link {
   		font-size: 1rem;
+  	}
+  }
+  .modal {
+  	&-cost, &-enroll {
+  		.form__btn {
+  			height: 3rem;
+  		}
+  	}
+  	&-video-close {
+  		right: auto;
+  		left: 2rem;
   	}
   }
 }

@@ -19,7 +19,7 @@ gulp.task('default', function() {
     // host: "192.168.1.108",
     server: {
       baseDir: "./",
-      //proxy: "homework.sl"
+      // proxy: "laser.sl"
     },
     notify: false
   });

@@ -14,14 +14,6 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Panton Black Caps';
-	src: url('../../prod/fonts/panton/Panton-BlackCaps.woff2') format('woff2'),
-		url('../../prod/fonts/panton/Panton-BlackCaps.woff') format('woff');
-	font-weight: 900;
-	font-style: normal;
-}
-
 @mixin ptn($style) {
 	@if $style == lt {
 		font-family: 'Panton', sans-serif;
@@ -31,11 +23,6 @@
 	@if $style == bold {
 		font-family: 'Panton', sans-serif;
 		font-weight: bold;
-		font-style: normal;
-	}
-	@if $style == black {
-		font-family: 'Panton Black Caps', sans-serif;
-		font-weight: 900;
 		font-style: normal;
 	}
 }

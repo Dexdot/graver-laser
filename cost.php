@@ -1,8 +1,8 @@
 <?php 
 $whatever=$_POST['whatever'];
 $username=$_POST['username'];
-$email=$_POST['email'],
-$msg=$_POST['msg'];
+$email=$_POST['email'];
+$msg=nl2br($_POST['msg']);
 $message = "
 Имя формы: ".htmlspecialchars($whatever)."<br />
 Имя пользователя: ".htmlspecialchars($username)."<br />
