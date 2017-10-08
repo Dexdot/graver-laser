@@ -10,12 +10,6 @@
   font-weight: bold;
   font-style: normal; }
 
-@font-face {
-  font-family: 'Panton Black Caps';
-  src: url("../../prod/fonts/panton/Panton-BlackCaps.woff2") format("woff2"), url("../../prod/fonts/panton/Panton-BlackCaps.woff") format("woff");
-  font-weight: 900;
-  font-style: normal; }
-
 .hamburger {
   padding: 10px 10px;
   display: inline-block;
@@ -1540,12 +1534,6 @@ Navigation
   font-family: 'Panton';
   src: url("../../prod/fonts/panton/Panton-Bold.woff2") format("woff2"), url("../../prod/fonts/panton/Panton-Bold.woff") format("woff");
   font-weight: bold;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Panton Black Caps';
-  src: url("../../prod/fonts/panton/Panton-BlackCaps.woff2") format("woff2"), url("../../prod/fonts/panton/Panton-BlackCaps.woff") format("woff");
-  font-weight: 900;
   font-style: normal; }
 
 @media (min-width: 481px) and (max-width: 767px) {

@@ -233,6 +233,19 @@ $(document).ready(function() {
       return false;
     });
 
+// Animations
+    new WOW().init();
+
+    var handleMatchMedia = function (mediaQuery) {
+            if (mediaQuery.matches) {
+                $('.slideInDown').removeClass('slideInDown').addClass('fadeInLeft');
+                $('.slideInUp, .fadeInUp').removeClass('slideInUp').addClass('fadeInRight');
+            }
+        };
+    mql = window.matchMedia('all and (max-width: 657px)');
+    handleMatchMedia(mql);
+    mql.addListener(handleMatchMedia);
+
 });
 
 // Siema
