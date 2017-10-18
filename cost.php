@@ -5,8 +5,8 @@ $email=$_POST['email'];
 $msg=$_POST['msg'];
 $message = "
 Имя формы: ".htmlspecialchars($whatever)."<br />
-Имя пользователя: ".htmlspecialchars($username)."<br />
-Эл. почта : ".htmlspecialchars($email)."<br />
+Имя заказчика: ".htmlspecialchars($username)."<br />
+Его эл.почта : ".htmlspecialchars($email)."<br />
 Сообщение: ".htmlspecialchars($msg);
 
 require_once('prod/vendor/phpmailer/PHPMailerAutoload.php');

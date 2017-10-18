@@ -2,10 +2,10 @@
 $whatever=$_POST['whatever'];
 $username=$_POST['username'];
 $phone=$_POST['phone'];
-// $message = "
-// Имя формы: ".htmlspecialchars($whatever)."<br />
-// Имя пользователя: ".htmlspecialchars($username)."<br />
-// Телефон : ".htmlspecialchars($phone);
+$message = "
+Имя формы: ".htmlspecialchars($whatever)."<br />
+Имя заказчика: ".htmlspecialchars($username)."<br />
+Его телефон : ".htmlspecialchars($phone);
 
 require_once('prod/vendor/phpmailer/PHPMailerAutoload.php');
 $mail = new PHPMailer;

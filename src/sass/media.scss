@@ -1,6 +1,7 @@
 @import "vars";
 @import "mixins";
 
+
 @media (max-width: 480px) {
 	html {
 		font-size: 12px;
@@ -464,6 +465,27 @@
 	}
 }
 
+@media (min-width: 1110px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1300px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
 @media (min-width: 1400px) {
 	html {
 		font-size: 17px;
@@ -486,6 +508,17 @@
 	}
 	.modal-call {
 		width: 400px;
+	}
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1485px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
 	}
 }
 
@@ -510,6 +543,17 @@
 		&-cost, &-enroll, &-success {
 			width: 460px;
 		}
+	}
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1690px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
 	}
 }
 
@@ -542,6 +586,17 @@
 		&__header, &__title {
 			line-height: 1.3;
 		}
+	}
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1870px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
 	}
 }
 

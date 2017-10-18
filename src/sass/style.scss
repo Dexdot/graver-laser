@@ -21,6 +21,60 @@ Navigation
 */
 
 
+// Preloader
+.preloader-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: $white;
+	z-index: 15;
+	transition: all 1s;
+}
+.spinner {
+  width: 70px;
+  height: 70px;
+  position: relative;
+  text-align: center;
+  animation: sk-rotate 2.0s infinite linear;
+  &-wrap {
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  }
+}
+.dot1, .dot2 {
+  width: 60%;
+  height: 60%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  background-color: #ff8000;
+  border-radius: 100%;
+  
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+.dot2 {
+  top: auto;
+  bottom: 0;
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
+@keyframes sk-bounce {
+  0%, 100% { 
+    transform: scale(0.0);
+    -webkit-transform: scale(0.0);
+  } 50% { 
+    transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+  }
+}
+
+
 
 /* 1. Main */
 #main {
@@ -1035,6 +1089,7 @@ Navigation
 		align-items: center;
 		justify-content: space-between;
 		width: 14.875rem;
+		position: relative;
 		&-title {
 			color: $white;
 			font-size: 1rem;
@@ -1043,6 +1098,33 @@ Navigation
 	}
 	&__link {
 		margin-left: 10px;
+	}
+}
+
+.back-to-top {
+	position: absolute;
+	top: 40px;
+	right: 0;
+	width: 35px;
+	height: 35px;
+	padding: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	border-radius: 50%;
+	background: #f8f9f9;
+	z-index: 9;
+	box-shadow: 0 14px 26px -12px rgba(153, 153, 153, 0.42), 0 4px 23px 0px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(153, 153, 153, 0.2);
+	transition: transform 0.3s;
+	&:hover {
+		transform: translateY(-10px);
+	}
+	svg {
+		transition: all 0.3s;
+		transform: rotate(-90deg);
+		width: 50%;
+		height: auto;
 	}
 }
 
@@ -1204,73 +1286,6 @@ Navigation
 	  	}
 	  }
 	}
-}
-
-
-// Preloader
-.preloader-overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: $white;
-	z-index: 15;
-	transition: all 1s;
-}
-
-
-.spinner {
-  width: 70px;
-  height: 70px;
-  position: relative;
-  text-align: center;
-  animation: sk-rotate 2.0s infinite linear;
-  &-wrap {
-  	position: absolute;
-  	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-  }
-}
-
-
-.dot1, .dot2 {
-  width: 60%;
-  height: 60%;
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  background-color: #ff8000;
-  border-radius: 100%;
-  
-  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
-  animation: sk-bounce 2.0s infinite ease-in-out;
-}
-
-.dot2 {
-  top: auto;
-  bottom: 0;
-  -webkit-animation-delay: -1.0s;
-  animation-delay: -1.0s;
-}
-
-@-webkit-keyframes sk-rotate { 100% { -webkit-transform: rotate(360deg) }}
-@keyframes sk-rotate { 100% { transform: rotate(360deg); -webkit-transform: rotate(360deg) }}
-
-@-webkit-keyframes sk-bounce {
-  0%, 100% { -webkit-transform: scale(0.0) }
-  50% { -webkit-transform: scale(1.0) }
-}
-
-@keyframes sk-bounce {
-  0%, 100% { 
-    transform: scale(0.0);
-    -webkit-transform: scale(0.0);
-  } 50% { 
-    transform: scale(1.0);
-    -webkit-transform: scale(1.0);
-  }
 }
 
 
