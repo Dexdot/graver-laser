@@ -1,0 +1,664 @@
+@import "vars";
+@import "mixins";
+
+
+@media (max-width: 480px) {
+	html {
+		font-size: 12px;
+	}
+	.main {
+		&__header {
+			font-size: 2rem;
+			line-height: 1.7;
+		}
+		&__title {
+			font-size: 1.7rem;
+			line-height: 1.7;
+		}
+	}
+	.hw {
+		&__name {
+			width: auto;
+			font-size: 1.9rem;
+			&-line {
+				display: none;
+			}
+		}
+	}
+	.service {
+		&__info {
+			padding: 3rem 2rem;
+		}
+		&__slide {
+			&.-spoon {
+				background-position: 20% center;
+			}
+			&.-book, &.-balsam, &.-chebu {
+				background-position: 30% center;
+			}
+			&.-kai, &.-amilia {
+				background-size: 200%;
+			}
+		}
+	}
+	.siema {
+		&__btn {
+			width: 38px;
+			.pgtn__line {
+				width: 38px;
+			}
+		}
+	}
+	.stages {
+		flex-direction: column;
+	}
+	.stage {
+		&__wrap {
+			margin: 3rem 0rem 0 0rem;
+			min-width: 150px;
+			align-items: flex-start;
+		}
+	}
+	.callback {
+		&__title {
+			font-size: 2.1rem;
+			line-height: 1.5;
+		}
+		&__address {
+			font-size: 1.6rem;
+		}
+		&__phone {
+			font-size: 2.3rem;
+		}
+		&__form {
+			width: 90%;
+			.form {
+				&__btn {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+	.form {
+		&__name, &__email, &__msg {
+			margin-bottom: 25px;
+		}
+		&__name, &__email {
+			float: none;
+			width: 100%;
+		}
+		&__btn {
+			width: 100%;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 80%;
+			max-width: 320px;
+			.form {
+				&__btn {
+					width: 100%;
+					height: 3.5rem;
+				}
+			}
+			&-header {
+				font-size: 16px;
+			}
+		}
+		&-success {
+			width: 80%;
+			max-width: 270px;
+		}
+		&-video {
+			width: 85%;
+			height: 40%;
+			margin: -50% auto 0;
+			&-close {
+				right: auto;
+				top: 0;
+				left: 20px;
+				font-size: 4rem;
+			}
+			&-nav {
+				flex-wrap: wrap;
+				justify-content: center;
+				bottom: 60px;
+				width: 95%;
+				&-link {
+					margin: 5px;
+					width: 95px;
+				}
+			}
+		}
+	}
+	#map {
+		height: 300px;
+	}
+}
+
+// sm
+@media (min-width: 481px) and (max-width: 767px) {
+	html {
+		font-size: 13px;
+	}
+	.main {
+		&__header {
+			font-size: 3.125rem;
+		}
+		&__title {
+			font-size: 2.5rem;
+		}
+	}
+	.stage {
+		&__wrap {
+			margin: 3rem 1.85rem 0 1.85rem;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 340px;
+			.form {
+				&__btn {
+					width: 65%;
+				}
+			}
+		}
+		&-success {
+			width: 270px;
+		}
+		&-video {
+			width: 70%;
+			height: 50%;
+			margin: -25% auto 0;
+			&-nav {
+				bottom: 60px;
+				&-link {
+					width: 95px;
+				}
+			}
+		}
+	}
+	.callback {
+		&__form {
+			.form {
+				&__name, &__email, &__msg {
+					margin-bottom: 3.5rem;
+				}
+			}
+			width: 80%;
+			max-width: 470px;
+		}
+	}
+}
+
+@media (max-width: 767px) {
+	#about {
+		padding-top: 30%;
+	}
+	.hw {
+		&__left {
+			height: auto;
+		}
+		&__slide {
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		&__mark, &__mercury {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.about {
+		transform: translateY(0);
+	}
+	.slick-dots {
+		justify-content: center;
+	}
+	.service {
+		flex-direction: column;
+		&--lr {
+			flex-direction: column-reverse;
+		}
+		&__info {
+			width: 95%;
+			br {
+				display: none;
+			}
+		}
+		&__slider {
+			width: 95%;
+		}
+	}
+	.siema {
+		&__btns {
+			right: 50%;
+			&.-lr {
+				left: 50%;
+			}
+		}
+	}
+	.callback {
+		flex-direction: column-reverse;
+		&__form {
+			.form {
+				&__name, &__email, &__msg, &__btn {
+					font-size: 1rem;
+				}
+				&__btn {
+					height: 4rem;
+					max-width: 280px;
+				}
+			}
+		}
+		&__info {
+			width: 100%;
+		}
+		&__info {
+			margin-top: 3rem;
+			align-items: center;
+			text-align: center;
+		}
+	}
+	.footer {
+		justify-content: space-around;
+		&__copyright {
+			display: none;
+		}
+		&__social {
+			&-title {
+				display: none;
+			}
+			width: auto;
+			justify-content: flex-start;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call, &-success {
+			.form {
+				&__name, &__email, &__msg, &__phone {
+					font-size: 0.9rem;
+				}
+			}
+		}
+	}
+}
+
+// md
+@media (min-width: 768px) and (max-width: 991px) {
+	html {
+		font-size: 14px;
+	}
+	#about {
+		padding-top: 20%;
+	}
+	.header {
+		&__logo {
+			width: 15rem;
+			img {
+				width: 14.5rem;
+			}
+		}
+	}
+	.about {
+		transform: translateY(2rem);
+	}
+	.hw {
+		&__mark {
+			width: 25rem;
+			transform: translateX(-25%);
+		}
+		&__mercury {
+			width: 27rem;
+			transform: translateX(-25%) translateY(25%);
+		}
+	}
+	.service {
+		&__info {
+			padding: 3rem 3rem 3rem 2.3rem;
+		}
+	}
+	.callback {
+		&__info {
+			width: 45%;
+		}
+		&__form {
+			width: 50%;
+		}
+	}
+	.footer {
+		&__logo {
+			width: 16.875rem;
+		}
+		&__copyright {
+			font-size: 1.1rem;
+		}
+		&__social {
+			&-title {
+				display: none;
+			}
+			width: auto;
+			justify-content: flex-start;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-success {
+			width: 345px;
+			.form {
+				&__btn {
+					width: 65%;
+				}
+			}
+		}
+		&-success {
+			width: 290px;
+		}
+		&-call {
+			width: 310px;
+		}
+		&-video {
+			width: 60%;
+			height: 50%;
+			margin: -20% auto 0;
+		}
+	}
+}
+
+// lg
+@media (min-width: 992px) and (max-width: 1199px) {
+	html {
+		font-size: 15px;
+	}
+	#about {
+		padding-top: 2rem;
+	}
+	.about {
+		transform: translateY(14rem);
+	}
+	.hw {
+		&__mark {
+			width: 30rem;
+			margin-bottom: 23%;
+		}
+		&__mercury {
+			width: 32rem;
+			margin-bottom: 17%;
+		}
+	}
+	.footer {
+		&__logo {
+			width: 16.875rem;
+		}
+		&__copyright {
+			font-size: 1.1rem;
+		}
+	}
+	.modal {
+		&-cost, &-enroll, &-call {
+			width: 350px;
+			.form {
+				&__btn {
+					width: 65%;
+				}
+			}
+		}
+		&-success {
+			width: 300px;
+		}
+	}
+}
+
+@media (min-width: 991px) {
+	.hamburger {
+		display: none;
+	}
+}
+
+@media (max-width: 992px) {
+	.nav {
+		flex-direction: column;
+		justify-content: flex-start;
+		line-height: 4;
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		padding-top: 12%;
+		background-color: #f4f4f4;
+		transform: translateX(100%);
+		transition: all 0.8s;
+		z-index: 10;
+		&.__active {
+			transform: translateX(0);
+		}
+		&__link {
+			font-size: 1.3rem;
+			color: $boldBlack;
+			&:focus {
+				color: $boldBlack;
+			}
+		}
+		&__contacts {
+			width: auto;
+			align-items: center;
+			justify-content: flex-start;
+		}
+	}
+	.phone {
+		color: $boldBlack;
+		font-size: 1.4rem;
+		&__code {
+			@include rbt(md);
+		}
+	}
+	.order-call {
+		font-size: 1.4rem;
+	}
+	.clients {
+		flex-wrap: wrap;
+	}
+	.client {
+		margin-top: 8px;
+	}
+}
+
+@media (min-width: 1110px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1300px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
+@media (min-width: 1400px) {
+	html {
+		font-size: 17px;
+	}
+	.header {
+		&__nav {
+			max-width: 70%;
+		}
+	}
+	.callback {
+		justify-content: space-around;
+		&__form {
+			width: 460px;
+			.form {
+				&__name, &__email, &__msg {
+					margin-bottom: 3.5rem;
+				}
+			}
+		}
+	}
+	.modal-call {
+		width: 400px;
+	}
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1485px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
+@media (min-width: 1600px) {
+	html {
+		font-size: 18px;
+	}
+	.header {
+		&__nav {
+			max-width: 65%;
+		}
+	}
+	.callback {
+		&__form {
+			width: 490px;
+		}
+	}
+	.portfolio {
+		flex-basis: 300px;
+	}
+	.modal {
+		&-cost, &-enroll, &-success {
+			width: 460px;
+		}
+	}
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1690px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
+@media (min-width: 1800px) {
+	html {
+		font-size: 19px;
+	}
+	.header {
+		&__nav {
+			max-width: 60%;
+		}
+	}
+	.callback {
+		&__title {
+			br {display: none;}
+		}
+		&__form {
+			width: 550px;
+		}
+	}
+	.portfolio {
+		flex-basis: 350px;
+	}
+	.modal {
+		&-call, &-cost, &-enroll {
+			width: 460px;
+		}
+	}
+	.main {
+		&__header, &__title {
+			line-height: 1.3;
+		}
+	}
+	.back-to-top {
+		top: 40px;
+		right: 0;
+	}
+}
+
+@media (min-width: 1870px) {
+	.back-to-top {
+		top: -5px;
+		right: -55px;
+	}
+}
+
+
+// Other
+
+@media (max-height: 480px) and (orientation: landscape) {
+  .nav {
+  	justify-content: flex-start;
+  	line-height: 2.5;
+  	padding-top: 5%;
+  	&__link {
+  		font-size: 1rem;
+  	}
+  }
+  .modal {
+  	&-cost, &-enroll {
+  		.form__btn {
+  			height: 3rem;
+  		}
+  	}
+  	&-video-close {
+  		right: auto;
+  		left: 2rem;
+  	}
+  }
+}
+
+@media (max-width: 520px) {
+	.portfolio {
+		max-width: 380px;
+	}
+}
+
+@media (max-width: 910px) {
+	.fancybox {
+		&-arrow {
+			&--left {
+				left: 0;
+			}
+			&--right {
+				right: 0;
+			}
+		}
+	}
+}
+
+@media (max-width: 1140px) {
+	.fancybox {
+		&-arrow {
+			&--left {
+				left: 3%;
+			}
+			&--right {
+				right: 3%;
+			}
+		}
+	}
+}
+
+@media (max-width: 423px) {
+	.clients {
+		flex-direction: column;
+	}
+}
