@@ -15,6 +15,10 @@ var gulp = require('gulp'),
   svgmin = require('gulp-svgmin'),
   runSequence = require('run-sequence');
 
+console.log('\n\n');
+console.log('FIX BUILD:IMG FILES UPPERCASE EXTENSION');
+console.log('\n\n');
+
 gulp.task('default', function() {
   bs.init({
     host: devip(),
@@ -27,6 +31,12 @@ gulp.task('default', function() {
   gulp.watch('src/sass/media.scss', ['sass']);
   gulp.watch('src/js/main.js', ['js-min']);
   gulp.watch('index.html').on('change', bs.reload);
+
+  setTimeout(() => {
+    console.log('\n\n');
+    console.log('FIX BUILD:IMG FILES UPPERCASE EXTENSION');
+    console.log('\n\n');
+  }, 1000);
 });
 
 gulp.task('sass', function() {
