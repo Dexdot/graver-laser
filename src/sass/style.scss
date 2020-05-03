@@ -192,6 +192,48 @@ Navigation
 
 .main {
 	padding-top: 10%;
+	
+	@media (min-width: 1200px) {
+		position: relative;
+	}
+
+	&__fasie {
+		position: absolute;
+		top: 8px;
+		right: 0;
+
+		text-align: center;
+		color: #fff;
+		font-family: 'Roboto',sans-serif;
+		font-weight: 400;
+		font-size: 12px;
+
+		&:hover, &:focus, &:visited, &:active {
+			color: #fff;
+		}
+
+		@media (max-width: 1199px) {
+			top: unset;
+			bottom: 40px;
+			right: 40px;
+		}
+
+		@media (max-width: 767px) {
+			display: none;
+		}
+		
+		span {
+			display: block;
+			opacity: 0.8;
+		}
+
+		img {
+			display: inline-block;
+			width: 160px;
+			height: auto;
+		}
+	}
+
 	&__header {
 		text-transform: uppercase;
 		text-align: center;

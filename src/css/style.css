@@ -332,6 +332,24 @@ Navigation
 
 .main {
   padding-top: 10%; }
+  .main__fasie {
+    position: absolute;
+    top: 8px;
+    right: 0;
+    text-align: center;
+    color: #fff;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    font-size: 12px; }
+    .main__fasie:hover, .main__fasie:focus, .main__fasie:visited, .main__fasie:active {
+      color: #fff; }
+    .main__fasie span {
+      display: block;
+      opacity: 0.8; }
+    .main__fasie img {
+      display: inline-block;
+      width: 160px;
+      height: auto; }
   .main__header {
     text-transform: uppercase;
     text-align: center;
@@ -1770,6 +1788,8 @@ Navigation
     right: -55px; } }
 
 @media (min-width: 1200px) {
+    .main {
+      position: relative; }
   .back-to-top {
     top: 40px;
     right: 0; } }
@@ -1849,6 +1869,8 @@ Navigation
     right: -55px; } }
 
 @media (max-width: 767px) {
+      .main__fasie {
+        display: none; }
   #about {
     padding-top: 30%; }
   .hw__left {
@@ -1929,6 +1951,12 @@ Navigation
         display: none; }
   .modal-cost .form__name, .modal-cost .form__email, .modal-cost .form__msg, .modal-cost .form__phone, .modal-enroll .form__name, .modal-enroll .form__email, .modal-enroll .form__msg, .modal-enroll .form__phone, .modal-call .form__name, .modal-call .form__email, .modal-call .form__msg, .modal-call .form__phone, .modal-success .form__name, .modal-success .form__email, .modal-success .form__msg, .modal-success .form__phone {
     font-size: 0.9rem; } }
+
+@media (max-width: 1199px) {
+      .main__fasie {
+        top: unset;
+        bottom: 40px;
+        right: 40px; } }
 
 @media (max-width: 480px) {
   html {
